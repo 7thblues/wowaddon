@@ -1,0 +1,6 @@
+VER 3 0100000000000001 "살상" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/시전 살상 명령
+/startattack
+END

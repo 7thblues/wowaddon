@@ -1,0 +1,77 @@
+VER 3 010000000000000F "광휘" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 신성한 광휘
+END
+VER 3 0100000000000014 "구손" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 구원의 손길
+END
+VER 3 0100000000000016 "딜" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 응징의 격노
+/사용 14
+END
+VER 3 0100000000000012 "보손" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 보호의 손길
+END
+VER 3 0100000000000010 "봉화" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 빛의 봉화
+END
+VER 3 010000000000000A "빛섬" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 빛의 섬광
+END
+VER 3 010000000000000C "서약" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 영광의 서약
+END
+VER 3 0100000000000004 "성격" "INV_Misc_QuestionMark"
+#showtooltip
+/대상취소 [dead][help]
+/공격시작
+/시전 성전사의 일격
+END
+VER 3 0100000000000015 "성보" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 성스러운 보호막
+END
+VER 3 0100000000000008 "성빛" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 성스러운 빛
+END
+VER 3 010000000000000D "신축" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 신의 축복
+END
+VER 3 010000000000000B "신충" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help]신성 충격;신성 충격
+END
+VER 3 0100000000000011 "은총" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 신의 은총
+END
+VER 3 0100000000000002 "자손" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 자유의 손길
+END
+VER 3 010000000000000E "정화" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][help][@targettarget,help][@player] 정화
+END
+VER 3 0100000000000009 "천빛" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 천상의 빛
+END
+VER 3 0100000000000005 "천폭" "INV_Misc_QuestionMark"
+#showtooltip
+/대상취소 [dead][help]
+/공격시작
+/시전 천상의 폭풍
+END
+VER 3 0100000000000013 "희손" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@mouseover,help][@player][help][@targettarget,help] 희생의 손길
+END

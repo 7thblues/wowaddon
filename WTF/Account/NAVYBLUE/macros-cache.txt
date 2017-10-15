@@ -1,0 +1,65 @@
+VER 3 000000000000000C "1특" "SPELL_MISC_PETHEAL"
+/cleartarget
+/targetenemy
+/startattack
+END
+VER 3 0000000000000011 "2특" "INV_PET_BATTLEPETTRAINING"
+/script  SetActiveSpecGroup(2)
+END
+VER 3 0000000000000013 "ㅇㅇㅇ" "INV_MISC_QUESTIONMARK"
+/cleartarget
+/targetenemy
+/startattack
+/시전 회전베기
+END
+VER 3 0000000000000009 "다야" "INV_Misc_QuestionMark"
+/stopmacro [noexists]
+/script p=UnitName("party3");t="target";SetRaidTarget(t,3);SendChatMessage("다야 --> [".. p.."]님","PARTY")
+END
+VER 3 000000000000001C "대상" "INV_MISC_QUESTIONMARK"
+/cleartarget
+/targetenemy
+/startattack
+END
+VER 3 0000000000000008 "동글" "INV_Misc_QuestionMark"
+/stopmacro [noexists]
+/script p=UnitName("party2")t="target";SetRaidTarget(t,2);SendChatMessage("동글 -> [".. p.."]님","PARTY")
+END
+VER 3 0000000000000007 "별" "INV_Misc_QuestionMark"
+/stopmacro [noexists]
+/script p=UnitName("party1")t="target";SetRaidTarget(t,1);SendChatMessage("별 --> [".. p.."]님","PARTY")
+END
+VER 3 000000000000000A "세모" "INV_Misc_QuestionMark"
+/stopmacro [noexists]
+/script p=UnitName("party4")t="target";SetRaidTarget(t,4);SendChatMessage("세모 --> [".. p.."]님","PARTY")
+END
+VER 3 000000000000000F "시야" "INV_MISC_QUESTIONMARK"
+ㅊ
+END
+VER 3 000000000000000B "악성" "INV_Misc_QuestionMark"
+/대상 악성
+END
+VER 3 000000000000001D "액션바클리어" "INV_MISC_QUESTIONMARK"
+/run for i = 1,240 do PickupAction(i) ClearCursor() end
+END
+VER 3 000000000000000E "완방" "INV_MISC_QUESTIONMARK"
+/run d=GetDodgeChance();p=GetParryChance();b=GetBlockChance();m=5+1/(0.0625+0.956/(GetCombatRating(CR_DEFENSE_SKILL)/4.91850*0.04));DEFAULT_CHAT_FRAME:AddMessage("회피+무막 : "..d+p.."\n빚맞음(기본+방숙) : "..m.."\n회피+무막+빚맞음 : "..d+p+m.."\n총 방어합 : "..d+p+m+b)
+END
+VER 3 0000000000000010 "장신구2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/사용 13
+END
+VER 3 0000000000000019 "점사" "INV_MISC_QUESTIONMARK"
+/run SetCVar("cameraDistanceMaxFactor", 2)
+/run SetCVar("cameraDistanceMax", 50)
+END
+VER 3 000000000000001B "차단" "INV_MISC_QUESTIONMARK"
+/Y 2번차단!!!!!
+/시전 [@focus]비난
+END
+VER 3 000000000000001A "타나안" "INV_MISC_QUESTIONMARK"
+/run print("복수:"..(IsQuestFlaggedCompleted(39290) and "o" or "x")..",공포주먹:"..(IsQuestFlaggedCompleted(39288) and "o" or "x")..",파멸바퀴:"..(IsQuestFlaggedCompleted(39289) and "o" or "x")..",죽음갈퀴:"..(IsQuestFlaggedCompleted(39287) and "o" or "x"))
+END
+VER 3 0000000000000014 "필드" "SPELL_MISC_PETHEAL"
+/run for k, v in pairs({ Galleon = 32098, Sha = 32099, Nalak = 32518, Oondasta = 32519}) do print(format("%s: %s", k, IsQuestFlaggedCompleted(v) and "\124cff00ff00Yes\124r" or "\124cffff0000No\124r")) end
+END

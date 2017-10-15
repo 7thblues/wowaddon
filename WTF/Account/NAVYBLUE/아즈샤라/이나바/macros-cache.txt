@@ -1,0 +1,77 @@
+VER 3 010000000000001A "ㅇㅁㄴ" "INV_MISC_QUESTIONMARK"
+/cast [@player] 치유의 파도
+END
+VER 3 0100000000000015 "강타" "INV_Misc_QuestionMark"
+#showtooltip 강타
+/시전 강타
+END
+VER 3 0100000000000008 "대보" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 대지의 보호막
+END
+VER 3 010000000000001C "대정" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/연속시전 대지의 정령 토템, 대지 강화
+END
+VER 3 010000000000001D "불정" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/연속시전 불의 정령 토템, 화염 강화
+END
+VER 3 0100000000000017 "상치" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 상급 치유의 물결
+END
+VER 3 0100000000000009 "성해" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 성난 해일
+END
+VER 3 010000000000000C "신속힐" "INV_Misc_QuestionMark"
+#showtooltip
+/시전 고대의 신속함
+/stopcasting
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 상급 치유의 물결
+END
+VER 3 0100000000000006 "연치" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 연쇄 치유
+END
+VER 3 0100000000000012 "용폭" "INV_Misc_QuestionMark"
+#showtooltip 수면 걷기
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 수면 걷기
+END
+VER 3 0100000000000019 "정폭" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 정기 폭발
+END
+VER 3 010000000000000B "정폭" "INV_Misc_QuestionMark"
+#showtooltip 정기 폭발
+/공격시작
+/cast 정기 폭발
+END
+VER 3 010000000000000A "정화" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help][help] 영혼 정화
+/cast [nomod][harm][target=mousemover,harm] 정화
+/cast 정화
+END
+VER 3 0100000000000016 "주술" "INV_Misc_QuestionMark"
+/cast [target=mouseover]주술;[target=target]주술
+END
+VER 3 010000000000001B "지배력" "INV_MISC_QUESTIONMARK"
+#showtooltip 지배력
+/시전 광폭화
+/stopcasting
+/시전 지배력
+END
+VER 3 0100000000000005 "치물" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 치유의 물결
+END
+VER 3 0100000000000018 "치파" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover,help][help][target=targettarget,help][target=player] 치유의 파도
+END
+VER 3 0100000000000002 "칼바" "INV_Misc_QuestionMark"
+#showtooltip 날카로운 바람
+/cast [target=mouseover,harm][harm][target=targettarget,harm][target=target] 날카로운 바람
+END

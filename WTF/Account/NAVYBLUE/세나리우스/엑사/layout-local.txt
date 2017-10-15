@@ -1,0 +1,15 @@
+Version: 1
+Frame: BagSync_MinimapButton
+FrameLevel: 3
+Anchor: TOPRIGHT
+X: -113
+Y: -170
+W: 32
+H: 32
+Frame: DBMMinimapButton
+FrameLevel: 3
+Anchor: TOPRIGHT
+X: -136
+Y: -139
+W: 32
+H: 32

@@ -1,0 +1,24 @@
+
+FishingBuddy_Player = {
+	["MinimapData"] = {
+		["minimapPos"] = 198.815536717435,
+		["hide"] = false,
+	},
+	["TotalTimeFishing"] = 1,
+	["Version"] = 10005,
+	["WasWearing"] = {
+	},
+	["Outfit"] = {
+	},
+	["WatcherLocation"] = {
+		["y"] = 0.00018310546875,
+		["x"] = 0.000152587890625,
+		["point"] = "CENTER",
+		["scale"] = 1,
+	},
+	["Settings"] = {
+		["TotalTimeFishing"] = 1695.01900000032,
+		["TurnOnSound"] = true,
+		["EnhancePools"] = true,
+	},
+}

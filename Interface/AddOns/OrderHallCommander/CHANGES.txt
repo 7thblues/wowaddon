@@ -1,0 +1,20 @@
+tag 5313b63e6108be8f63be85dc4a315bb77efac9eb 1.5.2
+Author:	Alar of Runetotem <alar@aspide.it>
+Date:	Sat Sep 30 15:51:48 2017 +0200
+
+Fix: #108 Ignored/Blacklisted missions aren't sorted at the bottom since
+1.5.1
+
+commit c756fb02b0f8c799938df1cca3876ab6efe15467
+Author: Alar of Runetotem <alar@aspide.it>
+Date:   Sat Sep 30 15:50:34 2017 +0200
+
+    Fix: #108 Ignored/Blacklisted missions aren't sorted at the bottom since
+    1.5.1
+
+commit 1f8f5c3f91fa3ec6586cb448e0da9b044a48c1fa
+Author: Alar of Runetotem <alar@aspide.it>
+Date:   Fri Sep 29 19:40:15 2017 +0200
+
+    Removed debug prints
+

@@ -1,0 +1,14 @@
+VER 3 010000000000000A "가막" "INV_MISC_QUESTIONMARK"
+/cleartarget
+/targetenemy
+/startattack
+/시전 소용돌이
+END
+VER 3 0100000000000006 "경계" "INV_Misc_QuestionMark"
+#showtooltip 경계
+/시전 [target=mouseover][help] 경계;경계
+END
+VER 3 0100000000000005 "도발" "INV_Misc_QuestionMark"
+#showtoolip
+/시전 [target=mouseover][harm] 도발;[help] 경계;도발
+END

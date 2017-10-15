@@ -1,0 +1,32 @@
+VER 3 0100000000000004 "도약" "INV_Misc_QuestionMark"
+#showtooltip 도약
+/petattack [target=target]
+/시전 도약
+END
+VER 3 0100000000000009 "물뜯" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 물어뜯기
+END
+VER 3 0100000000000003 "물어" "INV_Misc_QuestionMark"
+#showtooltip 물어뜯기
+/petattack [target=target]
+/시전 물어뜯기
+END
+VER 3 0100000000000001 "심강" "INV_Misc_QuestionMark"
+#showtooltip 심장 강타
+/공격시작
+/시전 심장 강타
+END
+VER 3 0100000000000007 "전부" "INV_MISC_QUESTIONMARK"
+#SHOWTOOLTIP
+/시전 [help, target=mouseover]아군 되살리기;아군 되살리기
+END
+VER 3 0100000000000005 "죽고" "INV_Misc_QuestionMark"
+#showtooltip
+/시전 [modifier:shiftt,@pet]죽음의 고리;죽음의 고리
+END
+VER 3 0100000000000002 "할퀴" "INV_Misc_QuestionMark"
+#showtooltip 할퀴기
+/petattack [target=target]
+/시전 할퀴기
+END

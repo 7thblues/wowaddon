@@ -1,0 +1,12 @@
+tag 3b472053388bf2244060ead346b0e701ac42cce7 2.12.21
+Author:	Starfox <w@t.f>
+Date:	Fri Oct 6 09:08:20 2017 +0200
+
+2.12.21, add legionfall bounty to tracking
+
+commit cf474baa84235ac805f2b4ddb1b308010ee811a3
+Author: Starfox <w@t.f>
+Date:   Fri Oct 6 09:07:54 2017 +0200
+
+    Armies of Legionfall bounty
+

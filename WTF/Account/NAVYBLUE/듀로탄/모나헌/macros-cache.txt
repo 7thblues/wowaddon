@@ -1,0 +1,27 @@
+VER 3 0100000000000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@target,harm]돌진; [@target,help]가로막기;돌진
+/시전 [@target,harm]무력화
+END
+VER 3 0100000000000005 "경계" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 [@target,harm]도발; [@target,help]경계
+END
+VER 3 0100000000000002 "딜" "INV_MISC_QUESTIONMARK"
+#showtooltip 무모한 희생
+/cast 무모한 희생
+/stopcasting
+/cast 투신
+/stopcasting
+/cast !해골 깃발
+/stopcasting
+/사용 13
+END
+VER 3 0100000000000004 "스톰" "INV_MISC_QUESTIONMARK"
+/착용 합일의 등싸개
+/cast 합일의 등싸개
+END
+VER 3 0100000000000006 "용포" "INV_MISC_QUESTIONMARK"
+/시전 피범벅
+/시전 용의 포효
+END

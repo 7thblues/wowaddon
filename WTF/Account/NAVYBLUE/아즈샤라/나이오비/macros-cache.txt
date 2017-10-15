@@ -1,0 +1,25 @@
+VER 3 0100000000000006 "고어" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 고어핀드의 손아귀
+END
+VER 3 0100000000000003 "서약" "INV_Misc_QuestionMark"
+#showtooltip
+/연속시전 시체 되살리기, 죽음의 서약
+END
+VER 3 0100000000000005 "작분" "INV_MISC_QUESTIONMARK"
+#showtooltip 작렬하는 분노
+/시전 혈기 전환
+/시전 작렬하는 분노
+END
+VER 3 0100000000000001 "전염병" "INV_Misc_QuestionMark"
+#showtooltip
+/연속시전 reset=combat/shift 전염병, 피의 소용돌이, 피의 소용돌이, 피의 소용돌이, 피의 소용돌이, 피의 소용돌이
+END
+VER 3 0100000000000007 "죽부" "INV_MISC_QUESTIONMARK"
+/시전 !죽음과 부패
+END
+VER 3 0100000000000004 "흡혈" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/시전 흡혈
+/시전 룬 전환
+END

@@ -1,0 +1,16 @@
+Changes since tag 7.3.5
+
+commit b1d8ba799457e4e53f4ea2407dc0bc5d28768255
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Oct 11 00:27:13 2017 +0200
+
+    Omega via svn r16784:
+    work around global having period in it by using _G[
+
+commit a7fa1981ca48259e205ada1e1f560ce7977d83d8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Oct 10 21:07:18 2017 +0200
+
+    tandanu via svn r16783:
+    increment alpha version
+

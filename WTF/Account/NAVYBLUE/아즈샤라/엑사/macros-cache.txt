@@ -1,0 +1,23 @@
+VER 3 010000000000000A "가막" "INV_MISC_QUESTIONMARK"
+/cleartarget
+/targetenemy
+/startattack
+/시전 소용돌이
+END
+VER 3 0100000000000006 "경계" "INV_Misc_QuestionMark"
+#showtooltip 경계
+/시전 [target=mouseover][help] 경계;경계
+END
+VER 3 010000000000000B "고로스" "INV_MISC_QUESTIONMARK"
+/run local a=GetTalentInfo;local b=LearnTalent;local c=function(c,d)  b(a(c,d,1)) end c(1,1) c(2,3) c(3,2) c(4,2) c(5,3) c(6,2) c(7,3) 
+END
+VER 3 0100000000000005 "도발" "INV_Misc_QuestionMark"
+#showtoolip
+/시전 [target=mouseover][harm] 도발;[help] 경계;도발
+END
+VER 3 010000000000000D "사스" "INV_MISC_QUESTIONMARK"
+/run local a=GetTalentInfo;local b=LearnTalent;local c=function(c,d)  b(a(c,d,1)) end c(1,3) c(2,3) c(3,3) c(4,2) c(5,3) c(6,2) c(7,2) 
+END
+VER 3 010000000000000C "심문관" "INV_MISC_QUESTIONMARK"
+/run local a=GetTalentInfo;local b=LearnTalent;local c=function(c,d)  b(a(c,d,1)) end c(1,3) c(2,3) c(3,3) c(4,2) c(5,3) c(6,2) c(7,3) 
+END

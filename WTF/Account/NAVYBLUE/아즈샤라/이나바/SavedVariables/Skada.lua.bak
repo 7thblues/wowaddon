@@ -1,0 +1,1998 @@
+
+SkadaPerCharDB = {
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["auras"] = {
+		},
+		["ccbreaks"] = 0,
+		["time"] = 0,
+		["interrupts"] = 6,
+		["damage"] = 12653468,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "SHAMAN",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["maxhp"] = 344760,
+				["role"] = "NONE",
+				["time"] = 399,
+				["interrupts"] = 6,
+				["ffdamagedonetargets"] = {
+				},
+				["ffdamagedonespells"] = {
+				},
+				["ffdamagedone"] = 0,
+				["damage"] = 12653468,
+				["damagespells"] = {
+					["가시 돋친 껍질"] = {
+						["hitmin"] = 10594,
+						["id"] = 188456,
+						["min"] = 10594,
+						["hitamount"] = 430605,
+						["hitmax"] = 12464,
+						["hit"] = 35,
+						["school"] = 8,
+						["max"] = 12464,
+						["totalhits"] = 35,
+						["damage"] = 430605,
+					},
+					["보조 무기 바람의 채찍"] = {
+						["hitmin"] = 2425,
+						["criticalamount"] = 4957,
+						["id"] = 114093,
+						["hitmax"] = 2706,
+						["hitamount"] = 10475,
+						["criticalmin"] = 4957,
+						["min"] = 2425,
+						["criticalmax"] = 4957,
+						["critical"] = 1,
+						["hit"] = 4,
+						["school"] = 1,
+						["max"] = 4957,
+						["totalhits"] = 5,
+						["damage"] = 15432,
+					},
+					["바람의 채찍"] = {
+						["hitmin"] = 3423,
+						["criticalamount"] = 9368,
+						["id"] = 114089,
+						["criticalmin"] = 9368,
+						["hitamount"] = 28796,
+						["critical"] = 1,
+						["min"] = 3423,
+						["criticalmax"] = 9368,
+						["hitmax"] = 5412,
+						["hit"] = 6,
+						["school"] = 1,
+						["max"] = 9368,
+						["totalhits"] = 7,
+						["damage"] = 38164,
+					},
+					["질풍의 공격"] = {
+						["hitmin"] = 2587,
+						["criticalamount"] = 158069,
+						["id"] = 25504,
+						["criticalmin"] = 6728,
+						["hitamount"] = 254144,
+						["critical"] = 21,
+						["min"] = 2587,
+						["criticalmax"] = 11132,
+						["hitmax"] = 6483,
+						["hit"] = 67,
+						["school"] = 1,
+						["max"] = 11132,
+						["totalhits"] = 88,
+						["damage"] = 412213,
+					},
+					["불꽃혓바닥 공격"] = {
+						["hitmin"] = 1489,
+						["criticalamount"] = 393972,
+						["id"] = 10444,
+						["criticalmin"] = 2979,
+						["hitamount"] = 545897,
+						["critical"] = 103,
+						["min"] = 1489,
+						["criticalmax"] = 5784,
+						["hitmax"] = 2892,
+						["hit"] = 295,
+						["school"] = 4,
+						["max"] = 5784,
+						["totalhits"] = 398,
+						["damage"] = 939869,
+					},
+					["폭풍채찍"] = {
+						["hitmin"] = 4,
+						["id"] = 195256,
+						["min"] = 4,
+						["hitamount"] = 1199715,
+						["hitmax"] = 30288,
+						["hit"] = 292,
+						["school"] = 8,
+						["max"] = 30288,
+						["totalhits"] = 292,
+						["damage"] = 1199715,
+					},
+					["번개 화살"] = {
+						["hitmin"] = 5477,
+						["criticalamount"] = 10955,
+						["id"] = 187837,
+						["criticalmin"] = 10955,
+						["hitamount"] = 39653,
+						["critical"] = 1,
+						["min"] = 5477,
+						["criticalmax"] = 10955,
+						["hitmax"] = 5915,
+						["hit"] = 7,
+						["school"] = 8,
+						["max"] = 10955,
+						["totalhits"] = 8,
+						["damage"] = 50608,
+					},
+					["공격"] = {
+						["EVADE"] = 1,
+						["totalhits"] = 321,
+						["hitmin"] = 1040,
+						["criticalamount"] = 416596,
+						["id"] = 6603,
+						["criticalmin"] = 2950,
+						["hitamount"] = 555993,
+						["critical"] = 73,
+						["min"] = 1040,
+						["criticalmax"] = 12013,
+						["hitmax"] = 5907,
+						["hit"] = 201,
+						["school"] = 1,
+						["max"] = 12013,
+						["MISS"] = 46,
+						["damage"] = 972589,
+					},
+					["바람의 일격"] = {
+						["hitmin"] = 36415,
+						["criticalamount"] = 230997,
+						["id"] = 115357,
+						["hitmax"] = 37677,
+						["hitamount"] = 74092,
+						["criticalmin"] = 73973,
+						["min"] = 36415,
+						["criticalmax"] = 81979,
+						["critical"] = 3,
+						["hit"] = 2,
+						["school"] = 1,
+						["max"] = 81979,
+						["totalhits"] = 5,
+						["damage"] = 305089,
+					},
+					["보조 무기 바람의 일격"] = {
+						["hitmin"] = 14389,
+						["criticalamount"] = 36246,
+						["id"] = 115360,
+						["criticalmin"] = 36246,
+						["hitamount"] = 72382,
+						["critical"] = 1,
+						["min"] = 14389,
+						["criticalmax"] = 36246,
+						["hitmax"] = 20258,
+						["hit"] = 4,
+						["school"] = 1,
+						["max"] = 36246,
+						["totalhits"] = 5,
+						["damage"] = 108628,
+					},
+					["늑대 정령: 공격"] = {
+						["hitmin"] = 3430,
+						["criticalamount"] = 27440,
+						["id"] = 6603,
+						["criticalmin"] = 6860,
+						["hitamount"] = 51450,
+						["critical"] = 4,
+						["min"] = 3430,
+						["criticalmax"] = 6860,
+						["hitmax"] = 3430,
+						["hit"] = 15,
+						["school"] = 1,
+						["max"] = 6860,
+						["totalhits"] = 19,
+						["damage"] = 78890,
+					},
+					["불꽃혓바닥"] = {
+						["hitmin"] = 11175,
+						["criticalamount"] = 302394,
+						["id"] = 193796,
+						["hitmax"] = 19722,
+						["hitamount"] = 339855,
+						["criticalmin"] = 26295,
+						["min"] = 11175,
+						["criticalmax"] = 39443,
+						["critical"] = 10,
+						["hit"] = 24,
+						["school"] = 4,
+						["max"] = 39443,
+						["totalhits"] = 34,
+						["damage"] = 642249,
+					},
+					["용암 채찍"] = {
+						["hitmin"] = 29271,
+						["criticalamount"] = 189129,
+						["id"] = 60103,
+						["criticalmin"] = 62014,
+						["hitamount"] = 317283,
+						["critical"] = 3,
+						["min"] = 29271,
+						["criticalmax"] = 64320,
+						["hitmax"] = 33363,
+						["hit"] = 10,
+						["school"] = 4,
+						["max"] = 64320,
+						["totalhits"] = 13,
+						["damage"] = 506412,
+					},
+					["보조 무기 폭풍의 일격"] = {
+						["hitmin"] = 9642,
+						["criticalamount"] = 478844,
+						["id"] = 32176,
+						["criticalmin"] = 23517,
+						["hitamount"] = 614665,
+						["critical"] = 17,
+						["min"] = 9642,
+						["criticalmax"] = 37584,
+						["hitmax"] = 21184,
+						["hit"] = 44,
+						["school"] = 1,
+						["max"] = 37584,
+						["totalhits"] = 61,
+						["damage"] = 1093509,
+					},
+					["폭풍의 일격"] = {
+						["hitmin"] = 15596,
+						["criticalamount"] = 725088,
+						["id"] = 32175,
+						["criticalmin"] = 51062,
+						["hitamount"] = 1540329,
+						["critical"] = 12,
+						["min"] = 15596,
+						["criticalmax"] = 85358,
+						["hitmax"] = 44417,
+						["hit"] = 55,
+						["school"] = 1,
+						["max"] = 85358,
+						["totalhits"] = 67,
+						["damage"] = 2265417,
+					},
+					["무엇인가: 공격"] = {
+						["hitmin"] = 3430,
+						["id"] = 6603,
+						["min"] = 3430,
+						["hitamount"] = 6860,
+						["hitmax"] = 3430,
+						["hit"] = 2,
+						["school"] = 1,
+						["max"] = 3430,
+						["totalhits"] = 2,
+						["damage"] = 6860,
+					},
+					["대지이빨"] = {
+						["hitmin"] = 25607,
+						["criticalamount"] = 1479555,
+						["id"] = 193786,
+						["hitmax"] = 45190,
+						["hitamount"] = 2107664,
+						["criticalmin"] = 55791,
+						["min"] = 25607,
+						["criticalmax"] = 90379,
+						["critical"] = 23,
+						["hit"] = 67,
+						["school"] = 8,
+						["max"] = 90379,
+						["totalhits"] = 90,
+						["damage"] = 3587219,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1504624788.18515,
+						["maxhp"] = 344760,
+						["log"] = {
+							{
+								["ts"] = 1504624767.88801,
+								["amount"] = -7280,
+								["hp"] = 100854,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [1]
+							{
+								["ts"] = 1504624769.26202,
+								["amount"] = -6041,
+								["hp"] = 87524,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [2]
+							{
+								["ts"] = 1504624770.77203,
+								["amount"] = -8855,
+								["hp"] = 81869,
+								["srcname"] = "섬뜩한 청소부",
+								["spellid"] = 88163,
+							}, -- [3]
+							{
+								["ts"] = 1504624771.32504,
+								["amount"] = -8130,
+								["hp"] = 73014,
+								["srcname"] = "섬뜩한 청소부",
+								["spellid"] = 88163,
+							}, -- [4]
+							{
+								["ts"] = 1504624772.27205,
+								["amount"] = -6051,
+								["hp"] = 65267,
+								["srcname"] = "섬뜩한 청소부",
+								["spellid"] = 88163,
+							}, -- [5]
+							{
+								["ts"] = 1504624772.87306,
+								["amount"] = -6588,
+								["hp"] = 59216,
+								["srcname"] = "섬뜩한 청소부",
+								["spellid"] = 88163,
+							}, -- [6]
+							{
+								["ts"] = 1504624773.78307,
+								["amount"] = -8001,
+								["hp"] = 52628,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [7]
+							{
+								["ts"] = 1504624775.30208,
+								["amount"] = -8934,
+								["hp"] = 45013,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [8]
+							{
+								["ts"] = 1504624776.83409,
+								["amount"] = -8617,
+								["hp"] = 36465,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [9]
+							{
+								["ts"] = 1504624778.3131,
+								["amount"] = -6220,
+								["hp"] = 28233,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [10]
+							{
+								["ts"] = 1504624779.79511,
+								["amount"] = -8095,
+								["hp"] = 22013,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [11]
+							{
+								["ts"] = 1504624783.58612,
+								["amount"] = -6584,
+								["hp"] = 14693,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [12]
+							{
+								["ts"] = 1504624786.60713,
+								["amount"] = -6888,
+								["hp"] = 8887,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [13]
+							{
+								["ts"] = 1504624788.18514,
+								["amount"] = -6321,
+								["hp"] = 1999,
+								["spellid"] = 88163,
+								["srcname"] = "섬뜩한 청소부",
+							}, -- [14]
+							{
+								["ts"] = 1504624788.18515,
+								["spellname"] = "이나바 죽음",
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [15]
+							["pos"] = 1,
+						},
+					}, -- [1]
+					{
+						["ts"] = 1504624421.53513,
+						["maxhp"] = 344760,
+						["log"] = {
+							{
+								["ts"] = 1504624416.49901,
+								["amount"] = -4742,
+								["hp"] = 69144,
+								["spellid"] = 88163,
+								["srcname"] = "악몽의 임프",
+							}, -- [1]
+							{
+								["ts"] = 1504624416.49902,
+								["amount"] = -8652,
+								["hp"] = 69144,
+								["spellid"] = 88163,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [2]
+							{
+								["ts"] = 1504624416.49903,
+								["amount"] = -4514,
+								["hp"] = 51236,
+								["spellid"] = 213575,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [3]
+							{
+								["ts"] = 1504624418.51004,
+								["amount"] = -3559,
+								["hp"] = 51624,
+								["spellid"] = 88163,
+								["srcname"] = "악몽의 임프",
+							}, -- [4]
+							{
+								["ts"] = 1504624418.51005,
+								["amount"] = -7136,
+								["hp"] = 51624,
+								["spellid"] = 88163,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [5]
+							{
+								["ts"] = 1504624419.22206,
+								["amount"] = -8019,
+								["hp"] = 32910,
+								["spellid"] = 194080,
+								["srcname"] = "악몽의 임프",
+							}, -- [6]
+							{
+								["ts"] = 1504624419.51707,
+								["amount"] = -3859,
+								["hp"] = 32910,
+								["spellid"] = 88163,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [7]
+							{
+								["ts"] = 1504624419.51708,
+								["amount"] = -4574,
+								["hp"] = 28336,
+								["spellid"] = 213575,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [8]
+							{
+								["ts"] = 1504624420.52309,
+								["amount"] = -15447,
+								["hp"] = 24866,
+								["spellid"] = 88163,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [9]
+							{
+								["ts"] = 1504624420.5231,
+								["amount"] = -4336,
+								["hp"] = 20530,
+								["spellid"] = 213575,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [10]
+							{
+								["ts"] = 1504624421.02811,
+								["amount"] = -4339,
+								["hp"] = 5083,
+								["spellid"] = 88163,
+								["srcname"] = "악몽의 임프",
+							}, -- [11]
+							{
+								["ts"] = 1504624421.42712,
+								["amount"] = -3752,
+								["hp"] = 744,
+								["spellid"] = 88163,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [12]
+							{
+								["spellname"] = "이나바 죽음",
+								["ts"] = 1504624421.53513,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [13]
+							["pos"] = 14,
+						},
+					}, -- [2]
+					{
+						["ts"] = 1504624411.8991,
+						["maxhp"] = 344760,
+						["log"] = {
+							{
+								["ts"] = 1504624407.14501,
+								["amount"] = -3419,
+								["hp"] = 49006,
+								["spellid"] = 88163,
+								["srcname"] = "어둠마귀 광신도",
+							}, -- [1]
+							{
+								["ts"] = 1504624407.41002,
+								["amount"] = -8595,
+								["hp"] = 41636,
+								["spellid"] = 88163,
+								["srcname"] = "악몽의 임프",
+							}, -- [2]
+							{
+								["ts"] = 1504624409.19503,
+								["amount"] = -4706,
+								["hp"] = 33422,
+								["spellid"] = 88163,
+								["srcname"] = "악몽의 임프",
+							}, -- [3]
+							{
+								["ts"] = 1504624409.32304,
+								["amount"] = -4135,
+								["hp"] = 28716,
+								["spellid"] = 88163,
+								["srcname"] = "악몽의 임프",
+							}, -- [4]
+							{
+								["ts"] = 1504624410.72705,
+								["amount"] = -8870,
+								["hp"] = 16097,
+								["spellid"] = 194080,
+								["srcname"] = "악몽의 임프",
+							}, -- [5]
+							{
+								["ts"] = 1504624410.93906,
+								["amount"] = -4191,
+								["hp"] = 16097,
+								["spellid"] = 88163,
+								["srcname"] = "악몽의 임프",
+							}, -- [6]
+							{
+								["ts"] = 1504624411.18507,
+								["amount"] = -4210,
+								["hp"] = 11906,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 88163,
+							}, -- [7]
+							{
+								["ts"] = 1504624411.39708,
+								["amount"] = -4153,
+								["hp"] = 7696,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1504624411.89909,
+								["amount"] = -5723,
+								["hp"] = 1,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 194080,
+							}, -- [9]
+							{
+								["ts"] = 1504624411.8991,
+								["spellname"] = "이나바 죽음",
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [10]
+							{
+								["ts"] = 1504624404.97311,
+								["amount"] = -4713,
+								["hp"] = 65457,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 88163,
+							}, -- [11]
+							{
+								["ts"] = 1504624405.15912,
+								["amount"] = -3978,
+								["hp"] = 60744,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 88163,
+							}, -- [12]
+							{
+								["ts"] = 1504624405.41213,
+								["amount"] = -3405,
+								["hp"] = 60744,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 88163,
+							}, -- [13]
+							{
+								["ts"] = 1504624406.93414,
+								["amount"] = -4740,
+								["hp"] = 53746,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 88163,
+							}, -- [14]
+							{
+								["ts"] = 1504624407.14415,
+								["amount"] = -3951,
+								["hp"] = 49006,
+								["srcname"] = "악몽의 임프",
+								["spellid"] = 88163,
+							}, -- [15]
+							["pos"] = 11,
+						},
+					}, -- [3]
+				},
+				["healed"] = {
+				},
+				["power"] = {
+					{
+						["amount"] = 28,
+						["spells"] = {
+							[193786] = 24,
+							[190185] = 4,
+						},
+					}, -- [1]
+					{
+						["amount"] = 15,
+						["spells"] = {
+							[187890] = 6,
+							[190185] = 9,
+						},
+					}, -- [2]
+					{
+						["amount"] = 24,
+						["spells"] = {
+							[187890] = 2,
+							[193786] = 22,
+						},
+					}, -- [3]
+					[0] = {
+						["amount"] = 3040,
+						["spells"] = {
+							[193786] = 1600,
+							[187890] = 1425,
+							[190185] = 15,
+						},
+					},
+					[13] = {
+						["amount"] = 12,
+						["spells"] = {
+							[193786] = 12,
+						},
+					},
+					[15] = {
+						["amount"] = 10,
+						["spells"] = {
+							[193786] = 10,
+						},
+					},
+					[25] = {
+						["amount"] = 0,
+						["spells"] = {
+							[193786] = 0,
+						},
+					},
+					[10] = {
+						["amount"] = 15,
+						["spells"] = {
+							[193786] = 15,
+						},
+					},
+					[20] = {
+						["amount"] = 5,
+						["spells"] = {
+							[193786] = 5,
+						},
+					},
+					[5] = {
+						["amount"] = 40,
+						["spells"] = {
+							[193786] = 40,
+							[187890] = 0,
+							[190185] = 0,
+						},
+					},
+					[18] = {
+						["amount"] = 7,
+						["spells"] = {
+							[193786] = 7,
+						},
+					},
+				},
+				["id"] = "Player-205-00AAFA10",
+				["damagetaken"] = 1954501,
+				["damagetakenspells"] = {
+					["고문의 화살"] = {
+						["crushing"] = 0,
+						["id"] = 188927,
+						["min"] = 33680,
+						["school"] = 32,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "고문의 화살",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 33680,
+						["damage"] = 33680,
+					},
+					["유령의 일격"] = {
+						["crushing"] = 0,
+						["id"] = 224175,
+						["min"] = 18181,
+						["school"] = 32,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "유령의 일격",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 21354,
+						["damage"] = 39535,
+					},
+					["내려쳐 베기"] = {
+						["crushing"] = 0,
+						["id"] = 186488,
+						["min"] = 11439,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "내려쳐 베기",
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["max"] = 14090,
+						["damage"] = 52074,
+					},
+					["지옥 화염구"] = {
+						["crushing"] = 0,
+						["id"] = 202295,
+						["min"] = 988,
+						["school"] = 4,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "지옥 화염구",
+						["blocked"] = 0,
+						["totalhits"] = 23,
+						["resisted"] = 0,
+						["max"] = 15951,
+						["damage"] = 93641,
+					},
+					["매서운 주먹"] = {
+						["crushing"] = 0,
+						["id"] = 198577,
+						["min"] = 8449,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "매서운 주먹",
+						["blocked"] = 0,
+						["totalhits"] = 10,
+						["resisted"] = 0,
+						["max"] = 10563,
+						["damage"] = 97380,
+					},
+					["어둠의 화살"] = {
+						["crushing"] = 0,
+						["id"] = 9613,
+						["min"] = 12033,
+						["school"] = 32,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "어둠의 화살",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 12033,
+						["damage"] = 12033,
+					},
+					["검은 담즙"] = {
+						["crushing"] = 0,
+						["id"] = 238563,
+						["min"] = 16157,
+						["school"] = 32,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "검은 담즙",
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["max"] = 17523,
+						["damage"] = 67241,
+					},
+					["지옥 발톱"] = {
+						["crushing"] = 0,
+						["id"] = 213575,
+						["min"] = 4336,
+						["school"] = 4,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "지옥 발톱",
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["max"] = 4574,
+						["damage"] = 17998,
+					},
+					["섬뜩한 통곡"] = {
+						["crushing"] = 0,
+						["id"] = 181466,
+						["min"] = 8732,
+						["school"] = 32,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "섬뜩한 통곡",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 8732,
+						["damage"] = 8732,
+					},
+					["가시 방패"] = {
+						["crushing"] = 0,
+						["id"] = 213512,
+						["min"] = 7187,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "가시 방패",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 14565,
+						["damage"] = 21752,
+					},
+					["공격"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["min"] = 3359,
+						["school"] = 1,
+						["critical"] = 8,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "공격",
+						["blocked"] = 0,
+						["totalhits"] = 202,
+						["resisted"] = 0,
+						["max"] = 21344,
+						["damage"] = 1421190,
+					},
+					["악몽폭발"] = {
+						["crushing"] = 0,
+						["id"] = 194080,
+						["min"] = 5428,
+						["school"] = 32,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "악몽폭발",
+						["blocked"] = 0,
+						["totalhits"] = 13,
+						["resisted"] = 0,
+						["max"] = 8870,
+						["damage"] = 89245,
+					},
+				},
+				["deathlog"] = {
+					{
+						["ts"] = 1504624813.031,
+						["amount"] = -8245,
+						["hp"] = 39081,
+						["spellid"] = 88163,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [1]
+					{
+						["ts"] = 1504624800.163,
+						["amount"] = -7740,
+						["hp"] = 166667,
+						["spellid"] = 88163,
+						["srcname"] = "야생 꿈길잡이",
+					}, -- [2]
+					{
+						["ts"] = 1504624800.991,
+						["amount"] = -6291,
+						["hp"] = 159316,
+						["spellid"] = 88163,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [3]
+					{
+						["ts"] = 1504624802.175,
+						["amount"] = -19790,
+						["hp"] = 153025,
+						["spellid"] = 88163,
+						["srcname"] = "야생 꿈길잡이",
+					}, -- [4]
+					{
+						["ts"] = 1504624802.486,
+						["amount"] = -8863,
+						["hp"] = 133235,
+						["spellid"] = 88163,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [5]
+					{
+						["ts"] = 1504624802.873,
+						["amount"] = -17226,
+						["hp"] = 107534,
+						["spellid"] = 238563,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [6]
+					{
+						["ts"] = 1504624804.191,
+						["amount"] = -7697,
+						["hp"] = 107534,
+						["spellid"] = 88163,
+						["srcname"] = "야생 꿈길잡이",
+					}, -- [7]
+					{
+						["ts"] = 1504624805.427,
+						["amount"] = -6396,
+						["hp"] = 100219,
+						["spellid"] = 88163,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [8]
+					{
+						["ts"] = 1504624806.145,
+						["amount"] = -8449,
+						["hp"] = 93823,
+						["spellid"] = 88163,
+						["srcname"] = "야생 꿈길잡이",
+					}, -- [9]
+					{
+						["ts"] = 1504624807.001,
+						["amount"] = -7080,
+						["hp"] = 85758,
+						["spellid"] = 88163,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [10]
+					{
+						["ts"] = 1504624808.246,
+						["amount"] = -7229,
+						["hp"] = 78678,
+						["spellid"] = 88163,
+						["srcname"] = "야생 꿈길잡이",
+					}, -- [11]
+					{
+						["ts"] = 1504624810.079,
+						["amount"] = -7989,
+						["hp"] = 71837,
+						["spellid"] = 88163,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [12]
+					{
+						["ts"] = 1504624810.231,
+						["amount"] = -8588,
+						["hp"] = 63848,
+						["spellid"] = 88163,
+						["srcname"] = "야생 꿈길잡이",
+					}, -- [13]
+					{
+						["ts"] = 1504624811.535,
+						["amount"] = -7173,
+						["hp"] = 55645,
+						["spellid"] = 88163,
+						["srcname"] = "섬뜩한 청소부",
+					}, -- [14]
+					{
+						["ts"] = 1504624812.249,
+						["amount"] = -9780,
+						["hp"] = 48472,
+						["spellid"] = 88163,
+						["srcname"] = "야생 꿈길잡이",
+					}, -- [15]
+					["pos"] = 2,
+				},
+				["overhealing"] = 0,
+				["name"] = "이나바",
+				["healingspells"] = {
+				},
+				["shielding"] = 0,
+				["healing"] = 0,
+				["auras"] = {
+					["산사태"] = {
+						["school"] = 8,
+						["name"] = "산사태",
+						["active"] = 14,
+						["id"] = 202004,
+						["started"] = 1504622995,
+						["auratype"] = "BUFF",
+						["uptime"] = 0,
+					},
+					["만족함"] = {
+						["school"] = 1,
+						["name"] = "만족함",
+						["active"] = 1,
+						["id"] = 57724,
+						["started"] = 1504624501,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 0,
+					},
+					["파멸의 씨앗 던지기"] = {
+						["school"] = 1,
+						["name"] = "파멸의 씨앗 던지기",
+						["active"] = 2,
+						["id"] = 229412,
+						["started"] = 1504624307,
+						["auratype"] = "BUFF",
+						["uptime"] = 0,
+					},
+					["불꽃혓바닥"] = {
+						["school"] = 4,
+						["name"] = "불꽃혓바닥",
+						["active"] = 15,
+						["id"] = 194084,
+						["started"] = 1504622966,
+						["auratype"] = "BUFF",
+						["uptime"] = 0,
+					},
+					["승천"] = {
+						["school"] = 1,
+						["name"] = "승천",
+						["active"] = 0,
+						["id"] = 114051,
+						["auratype"] = "BUFF",
+						["uptime"] = 15,
+					},
+					["잠식하는 악몽"] = {
+						["school"] = 1,
+						["name"] = "잠식하는 악몽",
+						["active"] = 0,
+						["id"] = 209928,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 15,
+					},
+					["피의 욕망"] = {
+						["school"] = 8,
+						["name"] = "피의 욕망",
+						["active"] = 1,
+						["id"] = 2825,
+						["started"] = 1504624501,
+						["auratype"] = "BUFF",
+						["uptime"] = 0,
+					},
+					["폭풍채찍"] = {
+						["school"] = 8,
+						["name"] = "폭풍채찍",
+						["active"] = 10,
+						["id"] = 195222,
+						["started"] = 1504622995,
+						["auratype"] = "BUFF",
+						["uptime"] = 0,
+					},
+					["질풍"] = {
+						["uptime"] = 47,
+						["active"] = 0,
+						["school"] = 8,
+						["name"] = "질풍",
+						["id"] = 205648,
+						["auratype"] = "BUFF",
+					},
+					["늑대 정령"] = {
+						["school"] = 8,
+						["name"] = "늑대 정령",
+						["active"] = 0,
+						["id"] = 2645,
+						["auratype"] = "BUFF",
+						["uptime"] = 13,
+					},
+					["윤회"] = {
+						["school"] = 1,
+						["name"] = "윤회",
+						["active"] = 1,
+						["id"] = 225080,
+						["started"] = 1504624411,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 0,
+					},
+					["폭풍인도자"] = {
+						["started"] = 1504622997,
+						["school"] = 1,
+						["name"] = "폭풍인도자",
+						["active"] = 5,
+						["id"] = 201846,
+						["auratype"] = "BUFF",
+						["uptime"] = 4,
+					},
+				},
+				["ccbreaks"] = 0,
+			}, -- [1]
+		},
+		["deaths"] = 3,
+		["mobs"] = {
+			["어둠마귀 타락자"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 273908,
+						["done"] = 31827,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 273908,
+				["done"] = 31827,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["지옥칼날 전사"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 145240,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 145240,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["마라고쉬"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["생기흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 56345,
+						["hits"] = 6,
+					},
+					["영혼 흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 501550,
+						["hits"] = 2,
+					},
+					["저승의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 18693,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["생기흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 56345,
+						["hits"] = 6,
+					},
+					["영혼 흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 501550,
+						["hits"] = 2,
+					},
+					["저승의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 18693,
+						["hits"] = 1,
+					},
+				},
+			},
+			["밀림의왕드루"] = {
+				["players"] = {
+				},
+				["hdone"] = 7083,
+				["htakenspell"] = {
+					["이세라의 선물"] = {
+						["min"] = 7083,
+						["crits"] = 0,
+						["max"] = 7083,
+						["healing"] = 7083,
+						["overhealing"] = 50621,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 7083,
+				["hdonespell"] = {
+					["이세라의 선물"] = {
+						["min"] = 7083,
+						["crits"] = 0,
+						["max"] = 7083,
+						["healing"] = 7083,
+						["overhealing"] = 50621,
+						["hits"] = 1,
+					},
+				},
+			},
+			["듀킁"] = {
+				["players"] = {
+				},
+				["hdone"] = 383004,
+				["htakenspell"] = {
+					["생기흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 13509,
+						["healing"] = 78568,
+						["overhealing"] = 23851,
+						["hits"] = 18,
+					},
+					["학살의 영혼"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 52974,
+						["healing"] = 80957,
+						["overhealing"] = 329403,
+						["hits"] = 3,
+					},
+					["연전연승"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 223479,
+						["healing"] = 223479,
+						["overhealing"] = 298747,
+						["hits"] = 2,
+					},
+					["자카이즈의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 34531,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 383004,
+				["hdonespell"] = {
+					["생기흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 13509,
+						["healing"] = 78568,
+						["overhealing"] = 23851,
+						["hits"] = 18,
+					},
+					["학살의 영혼"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 52974,
+						["healing"] = 80957,
+						["overhealing"] = 329403,
+						["hits"] = 3,
+					},
+					["연전연승"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 223479,
+						["healing"] = 223479,
+						["overhealing"] = 298747,
+						["hits"] = 2,
+					},
+					["자카이즈의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 34531,
+						["hits"] = 3,
+					},
+				},
+			},
+			["남똘"] = {
+				["players"] = {
+				},
+				["hdone"] = 372538,
+				["htakenspell"] = {
+					["피의 갈증 치유"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 100633,
+						["healing"] = 372538,
+						["overhealing"] = 381534,
+						["hits"] = 7,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 372538,
+				["hdonespell"] = {
+					["피의 갈증 치유"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 100633,
+						["healing"] = 372538,
+						["overhealing"] = 381534,
+						["hits"] = 7,
+					},
+				},
+			},
+			["물의 정령"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["자비의 오라"] = {
+						["min"] = 672,
+						["crits"] = 0,
+						["max"] = 673,
+						["healing"] = 14796,
+						["overhealing"] = 0,
+						["hits"] = 22,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 14796,
+				["hdonespell"] = {
+				},
+			},
+			["야생 꿈길잡이"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 111063,
+						["done"] = 69273,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 111063,
+				["done"] = 69273,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["지옥발톱 마귀"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 0,
+						["done"] = 8127,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 8127,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["병참장교 탈라스티스"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 1217737,
+						["done"] = 173161,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 1217737,
+				["done"] = 173161,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["아미자르"] = {
+				["players"] = {
+				},
+				["hdone"] = 614589,
+				["htakenspell"] = {
+					["휘어진 빛"] = {
+						["min"] = 2515,
+						["crits"] = 0,
+						["max"] = 2738,
+						["healing"] = 5253,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["여명의 빛"] = {
+						["min"] = 9235,
+						["crits"] = 0,
+						["max"] = 9235,
+						["healing"] = 9235,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["생기흡수"] = {
+						["min"] = 244,
+						["crits"] = 0,
+						["max"] = 234570,
+						["healing"] = 614589,
+						["overhealing"] = 0,
+						["hits"] = 17,
+					},
+					["빛의 심판"] = {
+						["min"] = 1025,
+						["crits"] = 1,
+						["max"] = 2052,
+						["healing"] = 3077,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["자비의 오라"] = {
+						["min"] = 673,
+						["crits"] = 3,
+						["max"] = 1346,
+						["healing"] = 14133,
+						["overhealing"] = 0,
+						["hits"] = 18,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 646287,
+				["hdonespell"] = {
+					["생기흡수"] = {
+						["min"] = 244,
+						["crits"] = 0,
+						["max"] = 234570,
+						["healing"] = 614589,
+						["overhealing"] = 0,
+						["hits"] = 17,
+					},
+				},
+			},
+			["상급 번개 정령"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["여명의 빛"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 9204,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["엉겅퀴잎 악동"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 242696,
+						["done"] = 41659,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 242696,
+				["done"] = 41659,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Bellinger"] = {
+				["players"] = {
+				},
+				["hdone"] = 30447,
+				["htakenspell"] = {
+					["휘어진 빛"] = {
+						["min"] = 2215,
+						["crits"] = 1,
+						["max"] = 5184,
+						["healing"] = 7399,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+					["자비의 오라"] = {
+						["min"] = 672,
+						["crits"] = 8,
+						["max"] = 1346,
+						["healing"] = 24217,
+						["overhealing"] = 0,
+						["hits"] = 28,
+					},
+					["빛의 심판"] = {
+						["min"] = 1015,
+						["crits"] = 3,
+						["max"] = 2052,
+						["healing"] = 9110,
+						["overhealing"] = 0,
+						["hits"] = 6,
+					},
+					["신속한 정의의 손길"] = {
+						["min"] = 6089,
+						["crits"] = 0,
+						["max"] = 6090,
+						["healing"] = 30447,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 71173,
+				["hdonespell"] = {
+					["신속한 정의의 손길"] = {
+						["min"] = 6089,
+						["crits"] = 0,
+						["max"] = 6090,
+						["healing"] = 30447,
+						["overhealing"] = 0,
+						["hits"] = 5,
+					},
+				},
+			},
+			["타이드스코른 일꾼"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 2077363,
+						["done"] = 329936,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 2077363,
+				["done"] = 329936,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["미녀는마법사"] = {
+				["players"] = {
+				},
+				["hdone"] = 26483,
+				["htakenspell"] = {
+					["자비의 오라"] = {
+						["min"] = 673,
+						["crits"] = 1,
+						["max"] = 1346,
+						["healing"] = 6730,
+						["overhealing"] = 0,
+						["hits"] = 9,
+					},
+					["휘어진 빛"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 2644,
+						["healing"] = 2644,
+						["overhealing"] = 6863,
+						["hits"] = 4,
+					},
+					["빛의 심판"] = {
+						["min"] = 471,
+						["crits"] = 0,
+						["max"] = 1026,
+						["healing"] = 8663,
+						["overhealing"] = 554,
+						["hits"] = 9,
+					},
+					["셀럼브라의 별빛"] = {
+						["min"] = 948,
+						["crits"] = 0,
+						["max"] = 4474,
+						["healing"] = 26483,
+						["overhealing"] = 4834,
+						["hits"] = 7,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 44520,
+				["hdonespell"] = {
+					["셀럼브라의 별빛"] = {
+						["min"] = 948,
+						["crits"] = 0,
+						["max"] = 4474,
+						["healing"] = 26483,
+						["overhealing"] = 4834,
+						["hits"] = 7,
+					},
+				},
+			},
+			["케니스콜"] = {
+				["players"] = {
+				},
+				["hdone"] = 167670,
+				["htakenspell"] = {
+					["재기의 바람"] = {
+						["min"] = 167670,
+						["crits"] = 0,
+						["max"] = 167670,
+						["healing"] = 167670,
+						["overhealing"] = 134575,
+						["hits"] = 1,
+					},
+					["자카이즈의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 92628,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 167670,
+				["hdonespell"] = {
+					["재기의 바람"] = {
+						["min"] = 167670,
+						["crits"] = 0,
+						["max"] = 167670,
+						["healing"] = 167670,
+						["overhealing"] = 134575,
+						["hits"] = 1,
+					},
+					["자카이즈의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 92628,
+						["hits"] = 3,
+					},
+				},
+			},
+			["나타샤샤"] = {
+				["players"] = {
+				},
+				["hdone"] = 125924,
+				["htakenspell"] = {
+					["자비의 오라"] = {
+						["min"] = 673,
+						["crits"] = 1,
+						["max"] = 1346,
+						["healing"] = 8749,
+						["overhealing"] = 0,
+						["hits"] = 12,
+					},
+					["신속한 정의의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 5959,
+						["healing"] = 11918,
+						["overhealing"] = 11918,
+						["hits"] = 4,
+					},
+					["여명의 빛"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 27706,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 20667,
+				["hdonespell"] = {
+					["휘어진 빛"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 5184,
+						["healing"] = 15296,
+						["overhealing"] = 6863,
+						["hits"] = 8,
+					},
+					["여명의 빛"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 9235,
+						["healing"] = 9235,
+						["overhealing"] = 36910,
+						["hits"] = 4,
+					},
+					["자비의 오라"] = {
+						["min"] = 672,
+						["crits"] = 13,
+						["max"] = 1346,
+						["healing"] = 68625,
+						["overhealing"] = 0,
+						["hits"] = 89,
+					},
+					["빛의 심판"] = {
+						["min"] = 471,
+						["crits"] = 4,
+						["max"] = 2052,
+						["healing"] = 20850,
+						["overhealing"] = 554,
+						["hits"] = 17,
+					},
+					["신속한 정의의 손길"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 5959,
+						["healing"] = 11918,
+						["overhealing"] = 11918,
+						["hits"] = 4,
+					},
+				},
+			},
+			["섬뜩한 청소부"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 2722873,
+						["done"] = 399429,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 2722873,
+				["done"] = 399429,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["에레다르 혈법사"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 86144,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 86144,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["대리"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["영혼 흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 40412,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["영혼 흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 40412,
+						["hits"] = 2,
+					},
+				},
+			},
+			["군단 선봉대원"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 290386,
+						["done"] = 56220,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 290386,
+				["done"] = 56220,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["레이드브레이커"] = {
+				["players"] = {
+				},
+				["hdone"] = 44058,
+				["htakenspell"] = {
+					["영혼 흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 44058,
+						["healing"] = 44058,
+						["overhealing"] = 67435,
+						["hits"] = 3,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 44058,
+				["hdonespell"] = {
+					["영혼 흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 44058,
+						["healing"] = 44058,
+						["overhealing"] = 67435,
+						["hits"] = 3,
+					},
+				},
+			},
+			["악몽의 임프"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 354440,
+						["done"] = 243488,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 354440,
+				["done"] = 243488,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["얀 하르넬로르"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 565888,
+						["done"] = 41034,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 565888,
+				["done"] = 41034,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["어둠마귀 광신도"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 342942,
+						["done"] = 164977,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 342942,
+				["done"] = 164977,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["칼자츠"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+					["생기흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 4981,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["생기흡수"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 4981,
+						["hits"] = 2,
+					},
+				},
+			},
+			["타이드스코른 도끼병"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 1793001,
+						["done"] = 216261,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 1793001,
+				["done"] = 216261,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["파멸의 소환사 노로몬드"] = {
+				["players"] = {
+					["이나바"] = {
+						["taken"] = 1999182,
+						["done"] = 179109,
+						["role"] = "NONE",
+						["class"] = "SHAMAN",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 1999182,
+				["done"] = 179109,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 12222863,
+		["ffdamagedone"] = 0,
+		["healing"] = 0,
+		["damagetaken"] = 1954501,
+		["overhealing"] = 0,
+		["shielding"] = 0,
+		["starttime"] = 1504622965,
+		["name"] = "전체",
+		["dispells"] = 0,
+		["power"] = {
+			28, -- [1]
+			15, -- [2]
+			24, -- [3]
+			[0] = 3040,
+			[13] = 12,
+			[15] = 10,
+			[25] = 0,
+			[10] = 15,
+			[20] = 5,
+			[5] = 40,
+			[18] = 7,
+		},
+		["mobhdone"] = 1771796,
+		["last_action"] = 1504622965,
+		["mobdone"] = 1954501,
+	},
+	["sets"] = {
+	},
+}

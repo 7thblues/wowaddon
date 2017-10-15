@@ -1,0 +1,305 @@
+
+ButtonForgeGlobalSettings = {
+	["Version"] = 0.9,
+	["UseCollectionsFavoriteMountButton"] = false,
+	["VersionMinor"] = 47,
+	["MacroCheckDelay"] = 3,
+	["RemoveMissingMacros"] = true,
+	["ForceOffCastOnKeyDown"] = false,
+}
+ButtonForgeGlobalProfiles = {
+}
+ButtonForgeGlobalBackup = {
+	["나이오비-아즈샤라"] = {
+		["AdvancedMode"] = false,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = false,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+			{
+				["ButtonsLocked"] = false,
+				["VDriver"] = "",
+				["Label"] = "",
+				["Order"] = 0,
+				["Rows"] = 1,
+				["Left"] = 505.522735595703,
+				["Cols"] = 4,
+				["HVehicle"] = true,
+				["HSpec1"] = false,
+				["HBonusBar"] = true,
+				["KeyBindText"] = true,
+				["HSpec3"] = false,
+				["Buttons"] = {
+					{
+						["SpellNameRank"] = "고름 일격()",
+						["Mode"] = "spell",
+						["SpellId"] = 85948,
+						["SpellName"] = "고름 일격",
+					}, -- [1]
+					{
+						["SpellNameRank"] = "스컬지의 일격()",
+						["Mode"] = "spell",
+						["SpellId"] = 55090,
+						["SpellName"] = "스컬지의 일격",
+					}, -- [2]
+					{
+						["SpellNameRank"] = "죽음의 고리()",
+						["Mode"] = "spell",
+						["SpellId"] = 47541,
+						["SpellName"] = "죽음의 고리",
+					}, -- [3]
+					{
+						["SpellNameRank"] = "죽음과 부패()",
+						["Mode"] = "spell",
+						["SpellId"] = 43265,
+						["SpellName"] = "죽음과 부패",
+					}, -- [4]
+				},
+				["GridAlwaysOn"] = true,
+				["HSpec2"] = false,
+				["BonusBar"] = false,
+				["Alpha"] = 1,
+				["HSpec4"] = false,
+				["Top"] = 327.947387695313,
+				["GUI"] = true,
+				["Scale"] = 1,
+				["HPetBattle"] = true,
+				["MacroText"] = true,
+				["TooltipsOn"] = true,
+				["ButtonGap"] = 6,
+				["Enabled"] = true,
+			}, -- [1]
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+	["앨리셔-아즈샤라"] = {
+		["AdvancedMode"] = false,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = false,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+			{
+				["ButtonsLocked"] = false,
+				["VDriver"] = "",
+				["Label"] = "",
+				["Order"] = 0,
+				["Rows"] = 1,
+				["Left"] = 861.699340820313,
+				["Cols"] = 4,
+				["HVehicle"] = true,
+				["HSpec1"] = false,
+				["HBonusBar"] = true,
+				["KeyBindText"] = true,
+				["HSpec3"] = false,
+				["GridAlwaysOn"] = true,
+				["Buttons"] = {
+					{
+						["SpellNameRank"] = "파멸의 재(유물)",
+						["Mode"] = "spell",
+						["SpellId"] = 205273,
+						["SpellName"] = "파멸의 재",
+					}, -- [1]
+					{
+						["SpellNameRank"] = "성전사의 일격()",
+						["Mode"] = "spell",
+						["SpellId"] = 35395,
+						["SpellName"] = "성전사의 일격",
+					}, -- [2]
+					{
+						["SpellNameRank"] = "천상의 망치()",
+						["Mode"] = "spell",
+						["SpellId"] = 198034,
+						["SpellName"] = "천상의 망치",
+					}, -- [3]
+					{
+						["SpellNameRank"] = "심판()",
+						["Mode"] = "spell",
+						["SpellId"] = 20271,
+						["SpellName"] = "심판",
+					}, -- [4]
+				},
+				["HSpec2"] = false,
+				["BonusBar"] = false,
+				["Alpha"] = 1,
+				["HSpec4"] = false,
+				["Top"] = 271.058868408203,
+				["GUI"] = true,
+				["Scale"] = 1,
+				["HPetBattle"] = true,
+				["MacroText"] = true,
+				["TooltipsOn"] = true,
+				["ButtonGap"] = 6,
+				["Enabled"] = true,
+			}, -- [1]
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+	["모나헌-듀로탄"] = {
+		["AdvancedMode"] = true,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = false,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+	["엑사-세나리우스"] = {
+		["AdvancedMode"] = false,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = false,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+	["이나바-아즈샤라"] = {
+		["AdvancedMode"] = false,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = false,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+	["엔클라-듀로탄"] = {
+		["AdvancedMode"] = false,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = true,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+	["로메크-아즈샤라"] = {
+		["AdvancedMode"] = false,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = false,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+	["엑사-아즈샤라"] = {
+		["AdvancedMode"] = true,
+		["AddonName"] = "Button Forge",
+		["ConfigureMode"] = false,
+		["RightClickSelfCast"] = false,
+		["Bars"] = {
+			{
+				["ButtonsLocked"] = true,
+				["VDriver"] = "",
+				["Label"] = "",
+				["Order"] = 0,
+				["Rows"] = 1,
+				["Left"] = 866.975952148438,
+				["Cols"] = 4,
+				["HVehicle"] = true,
+				["HSpec1"] = false,
+				["HBonusBar"] = true,
+				["KeyBindText"] = true,
+				["HSpec3"] = true,
+				["Enabled"] = true,
+				["GridAlwaysOn"] = false,
+				["Top"] = 460.123992919922,
+				["BonusBar"] = false,
+				["Alpha"] = 1,
+				["HSpec4"] = false,
+				["HSpec2"] = true,
+				["GUI"] = true,
+				["TooltipsOn"] = true,
+				["HPetBattle"] = true,
+				["MacroText"] = true,
+				["Scale"] = 1,
+				["ButtonGap"] = 6,
+				["Buttons"] = {
+					{
+						["Mode"] = "spell",
+						["SpellNameRank"] = "거인의 강타()",
+						["SpellId"] = 167105,
+						["SpellName"] = "거인의 강타",
+					}, -- [1]
+					{
+						["Mode"] = "spell",
+						["SpellNameRank"] = "필사의 일격()",
+						["SpellId"] = 12294,
+						["SpellName"] = "필사의 일격",
+					}, -- [2]
+					{
+						["Mode"] = "spell",
+						["SpellNameRank"] = "소용돌이()",
+						["SpellId"] = 1680,
+						["SpellName"] = "소용돌이",
+					}, -- [3]
+					{
+						["Mode"] = "spell",
+						["SpellNameRank"] = "마무리 일격()",
+						["SpellId"] = 163201,
+						["SpellName"] = "마무리 일격",
+					}, -- [4]
+				},
+			}, -- [1]
+			{
+				["ButtonsLocked"] = false,
+				["VDriver"] = "",
+				["Label"] = "",
+				["Order"] = 1,
+				["Rows"] = 1,
+				["Left"] = 866.975952148438,
+				["Cols"] = 4,
+				["HVehicle"] = true,
+				["HSpec1"] = false,
+				["HBonusBar"] = true,
+				["KeyBindText"] = true,
+				["HSpec3"] = false,
+				["GridAlwaysOn"] = true,
+				["Buttons"] = {
+					{
+						["Mode"] = "spell",
+						["SpellNameRank"] = "전투의 함성()",
+						["SpellId"] = 1719,
+						["SpellName"] = "전투의 함성",
+					}, -- [1]
+					{
+						["Mode"] = "item",
+						["ItemName"] = "암영의 반월도",
+						["ItemLink"] = "|cffa335ee|Hitem:147012::::::::110:71::::::|h[암영의 반월도]|h|r",
+						["ItemId"] = 147012,
+					}, -- [2]
+					{
+						["Mode"] = "spell",
+						["SpellNameRank"] = "칼날폭풍()",
+						["SpellId"] = 227847,
+						["SpellName"] = "칼날폭풍",
+					}, -- [3]
+					{
+						["Mode"] = "spell",
+						["SpellNameRank"] = "들이치기()",
+						["SpellId"] = 6552,
+						["SpellName"] = "들이치기",
+					}, -- [4]
+				},
+				["HSpec2"] = false,
+				["BonusBar"] = false,
+				["Alpha"] = 1,
+				["HSpec4"] = false,
+				["Top"] = 298.1240234375,
+				["GUI"] = true,
+				["Scale"] = 1,
+				["HPetBattle"] = true,
+				["MacroText"] = true,
+				["TooltipsOn"] = true,
+				["ButtonGap"] = 6,
+				["Enabled"] = true,
+			}, -- [2]
+		},
+		["Version"] = 0.9,
+		["VersionMinor"] = 47,
+	},
+}

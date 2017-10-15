@@ -1,0 +1,49 @@
+
+NugComboBarDB_Global = {
+	["meatcleaver"] = false,
+	["disableBlizzNP"] = true,
+	["infernoBlast"] = false,
+	["showEmpty"] = true,
+	["y"] = -135.262145996094,
+	["x"] = 6.08868980407715,
+	["soundNameFull"] = "alarmclockwarning3",
+	["charspec"] = {
+	},
+	["shadowDance"] = false,
+	["classThemes"] = true,
+	["disableBlizz"] = true,
+	["showAlways"] = true,
+	["colors"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+		{
+		}, -- [3]
+		{
+		}, -- [4]
+		{
+		}, -- [5]
+		{
+		}, -- [6]
+		{
+		}, -- [7]
+		{
+		}, -- [8]
+		{
+		}, -- [9]
+		{
+		}, -- [10]
+		["row2"] = {
+		},
+		["layer2"] = {
+		},
+		["bar1"] = {
+		},
+		["bar2"] = {
+		},
+	},
+	["tidalWaves"] = false,
+	["preset3d"] = "glowPurple",
+	["anchorpoint"] = "TOP",
+}

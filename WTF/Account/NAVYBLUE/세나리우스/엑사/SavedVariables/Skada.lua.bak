@@ -1,0 +1,313 @@
+
+SkadaPerCharDB = {
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["auras"] = {
+		},
+		["ccbreaks"] = 0,
+		["time"] = 0,
+		["interrupts"] = 0,
+		["damage"] = 2783,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "WARRIOR",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["role"] = "NONE",
+				["time"] = 8,
+				["interrupts"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["ffdamagedone"] = 0,
+				["damage"] = 2783,
+				["damagespells"] = {
+					["돌진"] = {
+						["hitmin"] = 22,
+						["criticalamount"] = 48,
+						["id"] = 126664,
+						["hitmax"] = 22,
+						["hitamount"] = 22,
+						["criticalmin"] = 48,
+						["min"] = 22,
+						["criticalmax"] = 48,
+						["critical"] = 1,
+						["hit"] = 1,
+						["school"] = 1,
+						["max"] = 48,
+						["totalhits"] = 2,
+						["damage"] = 70,
+					},
+					["공격"] = {
+						["hitmin"] = 30,
+						["criticalamount"] = 97,
+						["id"] = 6603,
+						["hitamount"] = 133,
+						["criticalmin"] = 97,
+						["hitmax"] = 54,
+						["min"] = 30,
+						["criticalmax"] = 97,
+						["critical"] = 1,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["school"] = 1,
+						["max"] = 97,
+						["damage"] = 230,
+					},
+					["격돌"] = {
+						["hitmin"] = 144,
+						["criticalamount"] = 1009,
+						["id"] = 1464,
+						["hitamount"] = 1474,
+						["criticalmin"] = 292,
+						["hitmax"] = 186,
+						["min"] = 144,
+						["criticalmax"] = 367,
+						["critical"] = 3,
+						["hit"] = 9,
+						["totalhits"] = 12,
+						["school"] = 1,
+						["max"] = 367,
+						["damage"] = 2483,
+					},
+				},
+				["damagetaken"] = 11,
+				["healed"] = {
+					["Player-2110-0631D588"] = {
+						["role"] = "NONE",
+						["name"] = "엑사",
+						["amount"] = 3,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["power"] = {
+					[0] = {
+						["amount"] = 0,
+						["spells"] = {
+							[173401] = 0,
+						},
+					},
+				},
+				["id"] = "Player-2110-0631D588",
+				["healing"] = 3,
+				["deathlog"] = {
+					{
+						["ts"] = 1506789190.084,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "골짜기 나방",
+						["hp"] = 448,
+					}, -- [1]
+					{
+						["ts"] = 1506789196.543,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "갑작스럽게 생겨난 돌연변이",
+						["hp"] = 448,
+					}, -- [2]
+					{
+						["ts"] = 1506789217.183,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "골짜기 나방",
+						["hp"] = 462,
+					}, -- [3]
+					{
+						["ts"] = 1506789437.592,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "갑작스럽게 생겨난 돌연변이",
+						["hp"] = 462,
+					}, -- [4]
+					{
+						["ts"] = 1506789479.888,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["srcname"] = "갑작스럽게 생겨난 돌연변이",
+						["hp"] = 462,
+					}, -- [5]
+					{
+						["ts"] = 1506789543.879,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "갑작스럽게 생겨난 돌연변이",
+						["hp"] = 462,
+					}, -- [6]
+					{
+						["ts"] = 1506789573.337,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "갑작스럽게 생겨난 돌연변이",
+						["hp"] = 495,
+					}, -- [7]
+					{
+						["ts"] = 1506790053.175,
+						["amount"] = -3,
+						["hp"] = 495,
+						["spellid"] = 88163,
+						["srcname"] = "돌연변이 올빼미야수",
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 3,
+						["hp"] = 495,
+						["ts"] = 1506790054.905,
+						["spellid"] = 59913,
+						["srcname"] = "엑사",
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["hp"] = 495,
+						["ts"] = 1506790054.905,
+						["spellid"] = 59913,
+						["srcname"] = "엑사",
+					}, -- [10]
+					["pos"] = 11,
+				},
+				["damagetakenspells"] = {
+					["공격"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
+						["min"] = 1,
+						["school"] = 1,
+						["name"] = "공격",
+						["blocked"] = 0,
+						["totalhits"] = 8,
+						["resisted"] = 0,
+						["max"] = 3,
+						["damage"] = 11,
+					},
+				},
+				["overhealing"] = 17,
+				["ffdamagedonetargets"] = {
+				},
+				["name"] = "엑사",
+				["healingspells"] = {
+					["신속한 정의의 손길"] = {
+						["shielding"] = 0,
+						["id"] = 59913,
+						["healing"] = 3,
+						["min"] = 0,
+						["name"] = "신속한 정의의 손길",
+						["max"] = 3,
+						["critical"] = 0,
+						["absorbed"] = 0,
+						["overhealing"] = 17,
+						["hits"] = 2,
+					},
+				},
+				["shielding"] = 0,
+				["maxhp"] = 495,
+				["auras"] = {
+					["돌진"] = {
+						["name"] = "돌진",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 236027,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 3,
+					},
+				},
+				["ccbreaks"] = 0,
+			}, -- [1]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["돌연변이 올빼미야수"] = {
+				["players"] = {
+					["엑사"] = {
+						["taken"] = 228,
+						["done"] = 3,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 228,
+				["done"] = 3,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["갑작스럽게 생겨난 돌연변이"] = {
+				["players"] = {
+					["엑사"] = {
+						["taken"] = 1404,
+						["done"] = 6,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 6,
+				["taken"] = 1404,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["돌연변이 뿌리 덩굴손"] = {
+				["players"] = {
+					["엑사"] = {
+						["taken"] = 163,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 163,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["골짜기 나방"] = {
+				["players"] = {
+					["엑사"] = {
+						["taken"] = 988,
+						["done"] = 2,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 2,
+				["taken"] = 988,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 2783,
+		["ffdamagedone"] = 0,
+		["healing"] = 3,
+		["damagetaken"] = 11,
+		["overhealing"] = 17,
+		["shielding"] = 0,
+		["starttime"] = 1506789177,
+		["name"] = "전체",
+		["dispells"] = 0,
+		["power"] = {
+			[0] = 0,
+		},
+		["mobhdone"] = 0,
+		["last_action"] = 1506789177,
+		["mobdone"] = 11,
+	},
+	["sets"] = {
+	},
+}
