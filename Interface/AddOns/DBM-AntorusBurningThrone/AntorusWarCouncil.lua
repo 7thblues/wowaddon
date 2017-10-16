@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1997, "DBM-AntorusBurningThrone", nil, 946)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 16794 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16797 $"):sub(12, -3))
 mod:SetCreatureID(122369, 122333, 122367)--Chief Engineer Ishkar, General Erodus, Admiral Svirax
 mod:SetEncounterID(2070)
 mod:SetZone()
@@ -109,7 +109,7 @@ local countdownExploitWeakness			= mod:NewCountdown("Alt8", 244892, "Tank", nil,
 ----Admiral Svirax
 local countdownFusillade				= mod:NewCountdown("AltTwo30", 244625)
 ----General Erodus
-local countdownReinforcements			= mod:NewCountdown("AltTwo25", 245546, nil, nil, 3)
+local countdownReinforcements			= mod:NewCountdown("Alt25", 245546)
 
 --General
 --local voiceGTFO						= mod:NewVoice(238028, nil, DBM_CORE_AUTO_VOICE4_OPTION_TEXT)--runaway
@@ -176,7 +176,7 @@ function mod:DemonicChargeTarget(targetname, uId)
 		specWarnDemonicChargeYou:Show()
 		voiceDemonicCharge:Play("runaway")
 		yellDemonicCharge:Yell()
-	elseif self:CheckNearby(10, targetname) then
+	elseif self:CheckNearby(10, targetname) and self:AntiSpam(3, 2) then
 		specWarnDemonicCharge:Show(targetname)
 		voiceDemonicCharge:Play("watchstep")
 	else
@@ -227,9 +227,9 @@ function mod:SPELL_CAST_START(args)
 		timerShockGrenadeCD:Stop()
 		timerExploitWeaknessCD:Stop()
 		countdownExploitWeakness:Cancel()
-		timerExploitWeaknessCD:Start(13)--13-14
-		countdownExploitWeakness:Start(13)
-		local cid = self:GetCIDFromGUID(args.destGUID)
+		timerExploitWeaknessCD:Start(12)--12-14
+		countdownExploitWeakness:Start(12)
+		local cid = self:GetCIDFromGUID(args.sourceGUID)
 		if cid == 122369 then--Chief Engineer Ishkar
 			timerWarpFieldCD:Stop()
 			timerEntropicMineCD:Start(8)
@@ -237,6 +237,7 @@ function mod:SPELL_CAST_START(args)
 			countdownFusillade:Cancel()
 			timerFusilladeCD:Start(15.9, 1)--Start Updated Fusillade
 			countdownFusillade:Start(15.9)
+			--TODO, reinforcements fix
 		elseif cid == 122333 then--General Erodus
 			timerSummonReinforcementsCD:Stop()--Stops fodder ones
 			timerSummonReinforcementsCD:Start(11)--Starts elite ones
@@ -385,7 +386,7 @@ end
 
 --"<14.68 23:07:26> [UNIT_SPELLCAST_SUCCEEDED] General Erodus(??) [[boss3:Summon Reinforcements::3-2083-1712-2166-245546-00015E79FE:245546]]", -- [121]
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if (spellId == 245161 or spellId == 245304) and self:AntiSpam(2, 1) then
+	if (spellId == 245161 or spellId == 245304) and self:AntiSpam(5, 1) then
 		warnEntropicMine:Show()
 		voiceEntropicMine:Play("watchstep")
 		timerEntropicMineCD:Start()
@@ -394,11 +395,15 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		local GUID = UnitGUID(uId)
 		warnOutofPod:Show(name)
 		local cid = self:GetCIDFromGUID(GUID)
-		if cid == 122369 then--Chief Engineer Ishkar 122369, 122333, 122367
+		if cid == 122369 then--Chief Engineer Ishkar
 			timerEntropicMineCD:Stop()
 			timerWarpFieldCD:Start(2)
 		elseif cid == 122333 then--General Erodus
-			timerSummonReinforcementsCD:Start(9)--Fodder ones
+			timerSummonReinforcementsCD:Stop()--Elite ones
+			countdownReinforcements:Cancel()
+			if not self:IsEasy() then
+				timerSummonReinforcementsCD:Start(9)--Fodder ones
+			end
 		elseif cid == 122367 then--Admiral Svirax
 			timerFusilladeCD:Stop()
 			countdownFusillade:Cancel()

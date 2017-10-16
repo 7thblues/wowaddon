@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2025, "DBM-AntorusBurningThrone", nil, 946)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 16789 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 16799 $"):sub(12, -3))
 mod:SetCreatureID(124445)
 mod:SetEncounterID(2075)
 mod:SetZone()
@@ -20,7 +20,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED 248333 250074 250555 249016 249017 249014 249015 248332",
 --	"SPELL_DAMAGE 248329",
 --	"SPELL_MISSED 248329",
---	"UNIT_DIED",
+	"UNIT_DIED",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
 --	"RAID_BOSS_WHISPER",
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4 boss5",
@@ -101,10 +101,12 @@ mod.vb.warpCount = 0
 mod.vb.lifeForceCast = 0
 mod.vb.spearCast = 0
 mod.vb.finalDoomCast = 0
+mod.vb.destructors = 0
+mod.vb.obfuscators = 0
 --local normalWarpTimers = {5.1, 16.0}
 --local heroicWarpTimers = {5.3, 10.0, 23.9, 20.7, 24.0, 19.0}
 --local mythicWarpTimers = {5.3, 9.8, 35.3, 44.8, 34.9}--Excludes the waves that don't fire warp in (obfuscators and purifiers)
-local normalRainOfFelTimers = {21.1, 24.1, 23.9, 24.1, 24.0, 96.0, 12.0, 36.0, 12.0, 36.0}
+local normalRainOfFelTimers = {30.3, 37.3, 42, 55.4, 80.1, 49.4, 20.1, 50.3, 35.3}
 local heroicRainOfFelTimers = {20, 43, 10, 65, 15, 20, 20, 30}
 local mythicRainOfFelTimers = {6, 29, 25, 50, 5, 20, 50, 25, 49, 26}--Might still variate?
 --local mythicSpearofDoomTimers = {}
@@ -113,12 +115,16 @@ local finalDoomTimers = {60, 125, 100}
 
 --[[
 Mythic Adds
-deconstructor 22, 96.3, 40, 
+destructor 22, 96.3, 40, 
 Obfuscator: 39.8, 157.9
+Normal Adds
+"Cloak-246753-npc:124207 = pull:195.6, 37.3", -- [2]
+"High Alert-254769-npc:123760 = pull:17.1, 45.5, 35.3, 51.1, 133.9, 51.1, 50.3", -- [3]
 --]]
 
 local updateInfoFrame
 do
+	lifeForceName = GetSpellInfo(250048)
 	local lines = {}
 	local sortedLines = {}
 	local function addLine(key, value)
@@ -131,10 +137,16 @@ do
 		table.wipe(sortedLines)
 		--Boss Powers first
 		if UnitExists("boss1") then
-			local currentPower = UnitPower("boss1") or 0
+			local currentPower = UnitPower("boss1", 10) or 0
 			addLine(UnitName("boss1"), currentPower)
 		end
-		--Probably some "active adds" count type stuff second
+		addLine(lifeForceName, mod.vb.lifeForceCast.."/5")
+		if mod.vb.obfuscators > 0 then
+			addLine(L.Obfuscators, mod.vb.obfuscators)
+		end
+		if mod.vb.destructors > 0 then
+			addLine(L.Destructors, mod.vb.destructors)
+		end
 		return lines, sortedLines
 	end
 end
@@ -142,6 +154,8 @@ end
 function mod:OnCombatStart(delay)
 	self.vb.rainOfFelCount = 0
 	self.vb.warpCount = 0
+	self.vb.destructors = 0
+	self.vb.obfuscators = 0
 	self.vb.lifeForceCast = 0
 	self.vb.spearCast = 0
 	self.vb.finalDoomCast = 0
@@ -155,9 +169,11 @@ function mod:OnCombatStart(delay)
 			timerFinalDoomCD:Start(60-delay, 1)
 			countdownFinalDoom:Start(60-delay)
 		else
-			timerRainofFelCD:Start(15-delay, 1)
-			countdownRainofFel:Start(15-delay)
-			timerSpearofDoomCD:Start(34.4-delay, 1)
+			timerRainofFelCD:Start(30-delay, 1)
+			countdownRainofFel:Start(30-delay)
+			if self:IsHeroic() then
+				timerSpearofDoomCD:Start(34.4-delay, 1)
+			end
 		end
 	else
 		timerMeteorStormCD:Start(1-delay)
@@ -234,9 +250,11 @@ function mod:SPELL_CAST_SUCCESS(args)
 			--countdownWarpIn:Start(timer)
 		--end
 	elseif spellId == 246753 then--Cloak
-		warnWarpIn:Show(args.destName)
+		self.vb.obfuscators = self.vb.obfuscators + 1
+		warnWarpIn:Show(args.sourceName)
 	elseif spellId == 254769 then--High Alert
-		warnWarpIn:Show(args.destName)
+		self.vb.destructors = self.vb.destructors + 1
+		warnWarpIn:Show(args.sourceName)
 	end
 end
 
@@ -276,7 +294,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			self:SetIcon(args.destName, 2)--Orange circle for fire
 		end
 	elseif spellId == 248332 then--Rain of Fel
-		warnRainofFel:CombinedShow(0.3, self.vb.rainOfFelCount, args.destName)
+		warnRainofFel:CombinedShow(1, self.vb.rainOfFelCount, args.destName)
 		if self:AntiSpam(5, 4) then
 			self.vb.rainOfFelCount = self.vb.rainOfFelCount + 1
 			local timer = self:IsMythic() and mythicRainOfFelTimers[self.vb.rainOfFelCount+1] or self:IsHeroic() and heroicRainOfFelTimers[self.vb.rainOfFelCount+1] or self:IsNormal() and normalRainOfFelTimers[self.vb.rainOfFelCount+1]
@@ -332,6 +350,15 @@ function mod:SPELL_AURA_REMOVED(args)
 		if args:IsPlayer() then
 			yellRainofFelFades:Cancel()
 		end
+	end
+end
+
+function mod:UNIT_DIED(args)
+	local cid = self:GetCIDFromGUID(args.destGUID)
+	if cid == 124207 then--Fel-Charged Obfuscator
+		self.vb.obfuscators = self.vb.obfuscators - 1
+	elseif cid == 123760 then--Fel-Infused Destructor
+		self.vb.destructors = self.vb.destructors - 1
 	end
 end
 

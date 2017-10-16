@@ -1,5 +1,53 @@
 Changes since tag 7.3.5
 
+commit ebc1621bb843caf21ef8038848d5dce236285d89
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Oct 16 03:36:03 2017 +0200
+
+    Omega via svn r16800:
+    Fix moroes bug in warnings too
+
+commit e03b7dee6e1bc0b8fcc82c4e7ca4fc481b33a38b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Oct 16 03:35:23 2017 +0200
+
+    Omega via svn r16799:
+    Fix a bug where willbreaker timer option and coat check timer options both had same spell ID and kept overwriting eachother and making both timers useless on moroes
+    Added more stuff to eonar info frame
+
+commit e02d900d1a2db48fdb2600791721df8d3fe3b000
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Oct 15 05:35:43 2017 +0200
+
+    Omega via svn r16798:
+    Add burning hatred warning
+
+commit 0f30e998dd431897059ec65533dd952e1237b5bf
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Oct 14 20:34:34 2017 +0200
+
+    Omega via svn r16797:
+    Tweak countdown voices and timers on antorus war council
+    Fix normal rain of fel timers on eonar
+    fix adds spawn messages on eonar
+    fixed alternate power on infoframe on eonar
+    Fixed some normal mode timers on Hasabel
+    fixed some spam on hasabel
+
+commit b30ee87a095ffe0ea9cc44b48d8e5ecf5a8c9bce
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Oct 14 18:19:39 2017 +0200
+
+    Omega via svn r16796:
+    some antispam fixes for you people testing out there
+
+commit f99fdfbfae28ac89d79b5a8f7261ef2827563e9c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Oct 14 17:39:02 2017 +0200
+
+    Omega via svn r16795:
+    Fix stupid
+
 commit 921f83f7b715302d87b1833e177669b9aee935f5
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Oct 14 06:42:28 2017 +0200
