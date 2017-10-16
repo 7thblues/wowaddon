@@ -54,7 +54,12 @@ local AuraTimerOnUpdate = function(self, time)
     self._elapsed = 0
 
     if not self.startTime then return end
-    local progress = self.duration - (GetTime() - self.startTime)
+    local progress
+    if self.isReversed then
+        progress = self.duration - (GetTime() - self.startTime)
+    else
+        progress = self.duration - ( (self.startTime+self.duration) - GetTime())
+    end
     self:SetValue(progress)
 end
 local dummy = function() return 0 end
@@ -1176,10 +1181,13 @@ end
 
 NugComboBar.ShowCooldownCharge = function(self, arg1, arg2, point) point.cd:Hide() end -- dummy to not break Valeera with NCB 7.1.4
 
-function NugComboBar.EnableBar(self, min, max, btype, isTimer)
+function NugComboBar.EnableBar(self, min, max, btype, isTimer, isReversed)
     if not self.bar then return end
     self.bar.enabled = true
-    if min and max then self.bar:SetMinMaxValues(min, max) end
+    if min and max then
+        self.bar:SetMinMaxValues(min, max)
+    end
+    self.bar.isReversed = isReversed
     self.bar.max = max
     if not chargeCooldown then
     	if not btype or btype == "Small" then
@@ -1322,7 +1330,9 @@ function NugComboBar.UNIT_COMBO_POINTS(self, event, unit, ...)
             if isDefaultSkin then
                 if comboPoints ~= self.MAX_POINTS then
                     local point = self.p[comboPoints+1]
-                    NugComboBar:MoveCharger(point)
+                    if point then
+                        NugComboBar:MoveCharger(point)
+                    end
                 end
             end
         end

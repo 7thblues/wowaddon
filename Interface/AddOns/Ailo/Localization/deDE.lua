@@ -74,8 +74,7 @@ L["Tracks any World Bosses from which loot has been collected this week"] = "Sä
 L["Updating data for current player."] = "Aktualisierung der Daten für aktuellen Spieler"
 L["Use !ClassColors"] = "!ClassColors verwenden"
 L["Use !ClassColors addon for class colors used to color the names in the tooltip"] = "Verwendet das Addon !ClassColors für die Klassenfarben der Tooltips."
---Translation missing 
-L["Weekly Dalaran Quest"] = "Weekly Dalaran Quest"
+L["Weekly Dalaran Quest"] = "Wöchentliche Dalaran-Quest"
 L["Weekly reset day"] = "Wöchentlicher Zurücksetzungstag"
 L["Wipe Database"] = "Datenbank löschen"
 

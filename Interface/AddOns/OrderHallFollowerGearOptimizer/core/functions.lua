@@ -2,10 +2,18 @@ local OHFGO, L = unpack(OrderHallFollowerGearOptimizer);
 
 
 OHFGO.upgradeDB = {
+	["Sets"] = { -- 7.3
+		[880] = 153005, -- Relinquished Armor Set
+		[900] = 151842, -- Krokul Armor Set
+		[925] = 151843, -- Mac'Aree Armor Set
+		[950] = 151844, -- Xenedar Armor Set
+		--[950] = 147558, -- Debug
+	},
 	["Upgrades"] = { -- 7.2
 		[5] = 147348, -- Bulky Armor Set
 		[10] = 147349, -- Spiked Armor Set
 		[15] = 147350, -- Invincible Armor Set
+		--[15] = 147558, -- Debug
 	},
 	["oldUpgrades"] = { -- 7.2
 		[5] = 136412, -- Heavy Armor Set
@@ -13,8 +21,28 @@ OHFGO.upgradeDB = {
 		[15] = 137208, -- Indestructible Armor Set
 	},
 	--["targetIlvls"] = { 775, 790, 805, 820, 835, 850 },
-	["targetIlvls"] = { 775, 800, 825, 850, 875, 900 }, -- 7.2
+	--["targetIlvls"] = { 775, 800, 825, 850, 875, 900 }, -- 7.2
+	["targetIlvls"] = { 800, 820, 850, 880, 900, 925, 950 }, -- 7.3
+
 }
+
+function OHFGO:DoesFollowerHaveSetItem(followerID)
+	local weaponItemID, weaponItemLevel, armorItemID, armorItemLevel = C_Garrison.GetFollowerItems(followerID);
+
+	if (self.db.forceSetItem) then
+		return false;
+	end
+	if (weaponItemLevel ~= 750) then
+		return true;
+	end
+	for k, v in pairs(self.upgradeDB.Sets) do
+		if (weaponItemID == v and weaponItemLevel >= k) then
+			return true;
+		end
+	end
+
+	return false;
+end
 
 function OHFGO:CollectCounterMechanicCounts()
 	local followers = C_Garrison.GetFollowers(LE_FOLLOWER_TYPE_GARRISON_7_0);
@@ -151,7 +179,8 @@ end
 
 function OHFGO:ResetItemCounts()
 	if (not self.upgradeCounts) then self.upgradeCounts = {}; end
-	for _, v in pairs({"Upgrades"}) do
+	--for _, v in pairs({"Upgrades"}) do
+	for _, v in pairs({"Sets","Upgrades","oldUpgrades"}) do -- 7.3
 		for _, itemID in pairs(self.upgradeDB[v]) do
 			self.upgradeCounts[itemID] = GetItemCount(itemID);
 		end
@@ -180,7 +209,7 @@ function OHFGO:AssignUpgrade(upgradeInfo, itemID)
 	self.upgradeCounts[itemID] = self.upgradeCounts[itemID] - 1;
 end
 
-function OHFGO:GetUpgradeItemCountTotals()
+--[[function OHFGO:GetUpgradeItemCountTotals()
 	local count = 0;
 	local table = self.upgradeDB.Upgrades;
 
@@ -190,11 +219,32 @@ function OHFGO:GetUpgradeItemCountTotals()
 		end
 	end
 	return count;
+end]]
+function OHFGO:GetUpgradeItemCountTotals(type) -- 7.3
+	local count = 0;
+	local table;
+	if (type == "Sets") then
+		table = self.upgradeDB.Sets;
+	elseif (type == "Upgrades") then
+		table = self.upgradeDB.Upgrades;
+	elseif type == "Old" then
+		table = self.upgradeDB.oldUpgrades;
+	end
+	if (table) then
+		for _, itemID in pairs(table) do
+			count = count + self:GetUpgradeItemCount(itemID);
+		end
+	elseif (type == "all") then
+		for _, table in pairs({"Sets","Upgrades","oldUpgrades"}) do
+			count = count + self:GetUpgradeItemCountTotals(table);
+		end
+	end
+	return count;
 end
 
-function OHFGO:GetOldUpgradeItemCountTotals() -- 7.2
+--[[function OHFGO:GetOldUpgradeItemCountTotals() -- 7.2
 	local count = 0;
-	local table = self.upgradeDB.oldUpgrades;
+	local table = 
 
 	if (table) then
 		for _, itemID in pairs(table) do
@@ -202,23 +252,24 @@ function OHFGO:GetOldUpgradeItemCountTotals() -- 7.2
 		end
 	end
 	return count;
-end
+end]]
 
 function OHFGO:CalculateUpgradeForFollower(followerID, targetIlvl)
 	local upgradeInfo = {};
 	local ItemID, ItemLevel, armorItemID, armorItemLevel = C_Garrison.GetFollowerItems(followerID);
 
 	local follower = C_Garrison.GetFollowerInfo(followerID);
+	local set_item_levels = {880, 900, 925, 950};
 	local upgraded = false;
 
 	if follower.isTroop then return upgradeInfo, upgraded; end
 
 	self:StartUpgrade();
 
-	if (ItemLevel < targetIlvl and targetIlvl <= self.oldCap and (self:GetOldUpgradeItemCountTotals() > 0)) then -- 7.2
+	if (ItemLevel < targetIlvl and targetIlvl <= self.oldCap and (self:GetUpgradeItemCountTotals("Old") > 0)) then -- 7.2
 		local br = false;
 
-		while (ItemLevel < targetIlvl and not br and self:GetOldUpgradeItemCountTotals() > 0) do
+		while (ItemLevel < targetIlvl and not br and self:GetUpgradeItemCountTotals("Old") > 0) do
 			local inserted = false;
 			local diff = self:NormalizeDifference(targetIlvl - ItemLevel);
 			while (diff > 0 and not inserted) do
@@ -252,10 +303,26 @@ function OHFGO:CalculateUpgradeForFollower(followerID, targetIlvl)
 		end
 	end
 
-	if (ItemLevel < targetIlvl and (self:GetUpgradeItemCountTotals() > 0)) then
+	--if (ItemLevel < targetIlvl and (self:GetUpgradeItemCountTotals() > 0)) then
+	if (ItemLevel < targetIlvl and (self:GetUpgradeItemCountTotals("Sets") > 0 or self:GetUpgradeItemCountTotals("Upgrades") > 0)) then -- 7.3
+		if (not self:DoesFollowerHaveSetItem(followerID) and self:GetUpgradeItemCountTotals("Sets") > 0) then
+			if (tContains(set_item_levels, targetIlvl) and self:GetUpgradeItemCount(self.upgradeDB.Sets[targetIlvl]) > 0) then
+				self:AssignUpgrade(upgradeInfo, self.upgradeDB.Sets[targetIlvl]);
+				ItemLevel = ItemLevel + (targetIlvl - ItemLevel);
+			else
+				for _, ilvl in pairs(set_item_levels) do
+					if (ilvl ~= targetIlvl and ItemLevel < ilvl and self:GetUpgradeItemCount(self.upgradeDB.Sets[ilvl]) > 0) then
+						self:AssignUpgrade(upgradeInfo, self.upgradeDB.Sets[ilvl]);
+						ItemLevel = ItemLevel + (ilvl - ItemLevel);
+						break;
+					end
+				end
+			end
+		end
+
 		local br = false;
 
-		while (ItemLevel < targetIlvl and not br and self:GetUpgradeItemCountTotals() > 0) do
+		while (ItemLevel < targetIlvl and not br and self:GetUpgradeItemCountTotals("Upgrades") > 0) do
 			local inserted = false;
 			local diff = self:NormalizeDifference(targetIlvl - ItemLevel);
 			while (diff > 0 and not inserted) do

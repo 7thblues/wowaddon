@@ -1682,8 +1682,10 @@ function oilvlcheckrange()
 			for i = 2, OilvlTooltip:NumLines() do
 				msg = _G["OilvlTooltipTextLeft"..i]:GetText();
 				if msg then
-					if cfg.oilvlten then msg = msg:find(TENname); if msg then break end end
-					if cfg.oilvltn then msg = msg:find(TNname); if msg then break end end
+					if cfg.raidmenuid == 4 then msg = msg:find(TENname); if msg then break end end
+					if cfg.raidmenuid == 3 then msg = msg:find(TOVname); if msg then break end end
+					if cfg.raidmenuid == 2 then msg = msg:find(TNname); if msg then break end end
+					if cfg.raidmenuid == 1 then msg = msg:find(TOSname); if msg then break end end
 				end
 			end	
 			if not msg then		
@@ -3196,7 +3198,7 @@ local difficulties = {
 }
 
 function OGetRaidProgression2(RaidName, OSTAT, NumRaidBosses)
-	collectgarbage()
+	--collectgarbage()
 	local i=0;
 	local omatch=false; -- check if some word repeat
 	local matchi=0; -- line that word repeat + 1
@@ -5279,6 +5281,7 @@ function oilvlUpdateLDBTooltip()
 end
 
 function oilvlSetABCD(i)
+	if not oilvlframedata.ilvl[i] then oilvlframedata.ilvl[i] = {"",otooltip6gearsw,0,0}; end
 	oilvlframedata.ilvl[i][1] = ""
 end
 
@@ -5468,8 +5471,9 @@ function events:INSPECT_READY(guid)
 	end
 end
 
+local LastInspectATime = GetTime()
 function events:INSPECT_ACHIEVEMENT_READY(...)
-	if not UnitAffectingCombat("player")  then
+	if not UnitAffectingCombat("player")  and GetTime() - LastInspectATime > 2.5 then
 		if cfg.oilvlms then
 			if Omover2 == 1 then
 				if UnitExists(rpunit) and CheckInteractDistance(rpunit, 1) and rpsw then
@@ -5527,7 +5531,8 @@ function events:INSPECT_ACHIEVEMENT_READY(...)
 		ClearAchievementComparisonUnit();
 		rpsw=false;
 		rpunit="";
-		Omover2=0;			
+		Omover2=0;
+		LastInspectATime = GetTime()
 	end
 	OILVL:UnregisterEvent("INSPECT_ACHIEVEMENT_READY")
 end
@@ -5605,6 +5610,7 @@ function events:PLAYER_LOGIN(...)
 	if cfg.oilvlautoscan == nil then cfg.oilvlautoscan = true end
 	if cfg.oilvlsamefaction == nil then cfg.oilvlsamefaction = false end
 	if cfg.oilvlbagilvl == nil then cfg.oilvlbagilvl = true end
+	if cfg.oilvlcolormatchitemrarity == nil then cfg.oilvlcolormatchitemrarity = true end
 	OilvlConfigFrame();
 	oilvlframe();
 	OVILRefresh();
@@ -6346,11 +6352,28 @@ function oilvlCheckUpgrade(i)
 end
 
 function oilvlShowBagItemLevel()
+	local quality_color = {
+		[0] = {127.5/255, 127.5/255, 127.5/255}, -- Poor (Gray)
+		[1] = { 255/255, 255/255, 255/255}, -- Common (White)
+		[2] = { 0/255, 255/255, 0/255}, -- Uncommon (Green)
+		[3] = { 25/255, 127.5/255, 255/255}, -- Rare (Blue)
+		[4] = { 255/255, 127/255, 243/255}, -- Epic (Purple)
+		[5] = { 255/255, 165.75/255, 0/255}, -- Legendary (Orange)
+		[6] = { 255/255, 204/255, 0/255}, -- Artifact (Light Gold)
+		[7] = { 255/255, 255/255, 0/255}, -- Heirloom (Light Gold)
+	}
+
 	if GetTime() - bagilvltime > 0.3 then
 		if not bagupdatesw then 
 			bagupdatesw = true;
 			OILVL:RegisterEvent("BAG_UPDATE")
 		end
+		local _,_,_,_,_,it1,_ = GetItemInfo(7521) -- armor
+		local _,_,_,_,_,it2,_ = GetItemInfo(23347) -- weapon
+		local _,_,_,_,_,_,it3 = GetItemInfo(141521) -- relic
+		if not it1 then it1 = "Armor" end
+		if not it2 then it2 = "Weapon" end
+		if not it3 then it3 = "Artifact Relic" end
 		for i=1,NUM_CONTAINER_FRAMES do
 			for j=1,MAX_CONTAINER_ITEMS do
 				local frame = _G["ContainerFrame"..i.."Item"..j]
@@ -6363,8 +6386,14 @@ function oilvlShowBagItemLevel()
 					end
 					local itemLink = GetContainerItemLink(frame:GetParent():GetID(), frame:GetID())
 					if itemLink then
-						local _, _, _, _, _,itemType,itemType2, _, _, _, _ = GetItemInfo(itemLink)
-						if (itemType == "Armor" or itemType == "Weapon" or itemType == "Artifact Relic" or itemType2 == "Artifact Relic") and cfg.oilvlbagilvl then 
+						local name, _, quality, _, _,itemType,itemType2, _, _, _, _ = GetItemInfo(itemLink)
+						if (itemType == it1 or itemType == it2 or itemType == it3 or itemType2 == it3) and ((UnitLevel("player") >= 20 and quality > 1) or UnitLevel("player") < 20) and cfg.oilvlbagilvl then
+							if cfg.oilvlcolormatchitemrarity then
+								frame.iLvl:SetTextColor(quality_color[quality][1],quality_color[quality][2],quality_color[quality][3])
+							else
+								frame.iLvl:SetTextColor(1,1,0)
+							end
+							frame.iLvl:SetShadowColor(1,1,1,1)
 							frame.iLvl:SetText(OItemAnalysis_CheckILVLGear2(itemLink))
 						else
 							frame.iLvl:SetText("")
@@ -6412,6 +6441,18 @@ SlashCmdList["OILVL_OIBI"] = function(msg)
 		cfg.oilvlbagilvl = true
 		print("OiLvL: Item level of items in bags are shown")
 		oilvlShowBagItemLevel();
+	end
+end
+
+--cfg.oilvlcolormatchitemrarity
+SLASH_OILVL_OIMATCHCOLOR1 = "/oimatchcolor"
+SlashCmdList["OILVL_OIMATCHCOLOR"] = function(msg)
+	if cfg.oilvlcolormatchitemrarity then 
+		cfg.oilvlcolormatchitemrarity = false
+		print("OiLvL: Color matching is disabled")
+	else
+		cfg.oilvlcolormatchitemrarity = true
+		print("OiLvL: Color matching is enabled")
 	end
 end
 

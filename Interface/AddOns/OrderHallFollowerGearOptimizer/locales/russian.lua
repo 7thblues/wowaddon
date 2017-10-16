@@ -10,6 +10,7 @@ L["Ignore Inactive Followers"] = "Игнорировать освобожден�
 L["Optimize"] = "Оптимизировать"
 --Translation missing 
 -- L["Order Hall Follower Gear Optimizer"] = ""
+L["Set items ignore applied enhancements"] = "Комплекты игнорируют примененные улучшения"
 L["Total Count: %d"] = "Итого: %d"
 L["Upgrade follower only if they meet target item level"] = "Улучшать соратника только если они достигнут целевого уровня предметов"
 L["You have no follower upgrade items in your bags."] = "У вас в сумках нет предметов для улучшения соратников"

@@ -10,6 +10,7 @@ L["Ignore Inactive Followers"] = "忽略未激活的随从"
 L["Optimize"] = "优化"
 --Translation missing 
 -- L["Order Hall Follower Gear Optimizer"] = ""
+L["Set items ignore applied enhancements"] = "优化时忽略套装物品。"
 L["Total Count: %d"] = "合计：%d"
 L["Upgrade follower only if they meet target item level"] = "仅在追随者满足目标装等时提升"
 L["You have no follower upgrade items in your bags."] = "缺少升级物品。"

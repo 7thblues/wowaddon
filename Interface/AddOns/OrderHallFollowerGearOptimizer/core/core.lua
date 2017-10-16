@@ -3,6 +3,7 @@ local OHFGO, L = unpack(OrderHallFollowerGearOptimizer)
 local defaults = {
 	profile = {
 		["mustMeetTargetIlvl"] = true,
+		["forceSetItem"] = true,
 		["ignoreWorking"] = true,
 		["ignoreInactive"] = true,
 	},
@@ -369,15 +370,21 @@ function OHFGO:GetOptions()
 				name = L["Upgrade follower only if they meet target item level"],
 				width = "full",
 			},
-			ignoreWorking = {
+			forceSetItem = {
 				type = "toggle",
 				order = 2,
+				name = L["Set items ignore applied enhancements"],
+				width = "full",
+			},
+			ignoreWorking = {
+				type = "toggle",
+				order = 3,
 				name = L["Ignore Combat Ally Followers"],
 				width = "full",
 			},
 			ignoreInactive = {
 				type = "toggle",
-				order = 3,
+				order = 4,
 				name = L["Ignore Inactive Followers"],
 				width = "full",
 			},
@@ -419,21 +426,34 @@ function OHFGO:OpenFrame()
 	self:ResetItemCounts();
 
 	local followers = self:GetTargetFollowers(self.cap);
-	local items = self:GetUpgradeItemCountTotals("all");
+	--local items = self:GetUpgradeItemCountTotals("all");
+	local items = self:GetUpgradeItemCountTotals("Upgrades"); -- 7.3
+
+	-- 7.3
+	local setFollowers = self:GetTargetFollowers(self.SetCap)
+	local setItems = self:GetUpgradeItemCountTotals("Sets")
 
 	-- 7.2
 	local oldFollowers = self:GetTargetFollowers(self.oldCap);
-	local oldItems = self:GetOldUpgradeItemCountTotals("old");
+	local oldItems = self:GetUpgradeItemCountTotals("Old");
 
 	local open, reason = true, nil;
 
-	if (#oldFollowers == 0 and #followers == 0) then -- 7.2
+	--Debug
+	--print(format("7.3: %d, %d - 7.2: %d, %d - 7.0: %d, %d", #setFollowers, setItems, #oldFollowers, oldItems, followers, items))
+
+	--if (#oldFollowers == 0 and #followers == 0) then -- 7.2
+	if (#setFollowers == 0 and #oldFollowers == 0 and #followers == 0) then -- 7.3
 		open = false;
 		reason = L["You have no followers eligible to be upgraded."];
-	elseif (oldItems == 0 and items == 0) then
+	--elseif (oldItems == 0 and items == 0) then
+	elseif (setItems == 0 and oldItems == 0 and items == 0) then -- 7.3
 		open = false;
 		reason = L["You have no follower upgrade items in your bags."];
 	elseif (#oldFollowers == 0 and oldItems > 0 and items == 0) then
+		open = false;
+		reason = L["You have no suitable follower upgrade items in your bags."];
+	elseif (#followers == 0 and items > 0 and setItems == 0) then -- 7.3
 		open = false;
 		reason = L["You have no suitable follower upgrade items in your bags."];
 	end
@@ -459,6 +479,10 @@ function OHFGO:Wait(button)
 end
 
 function OHFGO:Init()
+	if _G["OrderHallFollowerGearOptimizerButton"] then -- 7.3, some reason this ran multiple times, stop it
+		return
+	end
+
 	local tab = OrderHallMissionFrame.FollowerTab;
 
 	if (InCombatLockdown() or UnitAffectingCombat("player")) then
@@ -469,7 +493,9 @@ function OHFGO:Init()
 	self.frame = self:CreateFrame();
 	self.frame.followerFrames = {};
 
-	self.cap = self.upgradeDB.targetIlvls[#self.upgradeDB.targetIlvls];
+	--self.cap = self.upgradeDB.targetIlvls[#self.upgradeDB.targetIlvls];
+	self.cap = 900; -- 7.3
+	self.SetCap = 950; -- 7.3
 	self.oldCap = 850; -- 7.2
 
 	local button = CreateFrame('Button', 'OrderHallFollowerGearOptimizerButton', tab, 'UIPanelButtonTemplate');

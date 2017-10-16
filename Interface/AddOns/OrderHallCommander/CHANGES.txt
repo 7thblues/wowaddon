@@ -1,20 +1,26 @@
-tag 5313b63e6108be8f63be85dc4a315bb77efac9eb 1.5.2
+tag 9b92fde0d870bf1821eb1b43cde7c701835462dc 1.5.4
 Author:	Alar of Runetotem <alar@aspide.it>
-Date:	Sat Sep 30 15:51:48 2017 +0200
+Date:	Sat Oct 14 01:26:33 2017 +0200
 
-Fix: #108 Ignored/Blacklisted missions aren't sorted at the bottom since
-1.5.1
+Feature: you can now disable a troop type clicking its icon nin the OHC
+troop bar
+Feature: Added Icons for Krokul followers item
+Fix: some localizations (italian) were broken
+Fix: Maximize xp was ignoring cap
+Fix: #119 Bad display when more than 5 types of troops
+Fix: #109 Future mission were missing in tooltip
+Fix: #118 Troops with random abilities should now be considered
+Fix: #99 Caused by same issue of 118, should be fixed
 
-commit c756fb02b0f8c799938df1cca3876ab6efe15467
+commit 74eab6b412dcdff2fdab891859714aaf07df79d9
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Sat Sep 30 15:50:34 2017 +0200
+Date:   Sat Oct 14 01:24:53 2017 +0200
 
-    Fix: #108 Ignored/Blacklisted missions aren't sorted at the bottom since
-    1.5.1
+    Added icons for Krokuls troops Item
 
-commit 1f8f5c3f91fa3ec6586cb448e0da9b044a48c1fa
+commit fb8390a57e5b84ce218895b28a33448677bfbb73
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Fri Sep 29 19:40:15 2017 +0200
+Date:   Thu Oct 12 22:41:34 2017 +0200
 
-    Removed debug prints
+    Tutorialstep now defaults to 1
 

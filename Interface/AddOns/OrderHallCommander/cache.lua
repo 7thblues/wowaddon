@@ -74,12 +74,28 @@ if not ViragDevTool_AddData then ViragDevTool_AddData=function() end end
 local KEY_BUTTON1 = "\124TInterface\\TutorialFrame\\UI-Tutorial-Frame:12:12:0:0:512:512:10:65:228:283\124t" -- left mouse button
 local KEY_BUTTON2 = "\124TInterface\\TutorialFrame\\UI-Tutorial-Frame:12:12:0:0:512:512:10:65:330:385\124t" -- right mouse button
 local CTRL_KEY_TEXT,SHIFT_KEY_TEXT=CTRL_KEY_TEXT,SHIFT_KEY_TEXT
-
+local CTRL_KEY_TEXT,SHIFT_KEY_TEXT=CTRL_KEY_TEXT,SHIFT_KEY_TEXT
+local CTRL_SHIFT_KET_TEXT=CTRL_KEY_TEXT .. '-' ..SHIFT_KEY_TEXT
+local format,pcall=format,pcall
+local function safeformat(mask,...)
+  local rc,result=pcall(format,mask,...)
+  if not rc then
+    for k,v in pairs(L) do
+      if v==mask then
+        mask=k
+        break
+      end
+    end
+ end
+  rc,result=pcall(format,mask,...)
+  return rc and result or mask 
+end
 
 -- End Template - DO NOT MODIFY ANYTHING BEFORE THIS LINE
 --*BEGIN
 local CATEGORY_INFO_FORMAT=GARRISON_LANDING_COMPLETED:gsub("%%d/%%d","%%d/%%d %%d")
 local CATEGORY_INFO_FORMAT_SHORT="%d/%d %d " .. READY
+local CATEGORY_INFO_FORMAT_VERY_SHORT="%d/%d (%d) "
 local pairs,math,wipe,tinsert,GetTime,next,ipairs,strjoin=pairs,math,wipe,tinsert,GetTime,next,ipairs,strjoin
 local GARRISON_FOLLOWER_INACTIVE=GARRISON_FOLLOWER_INACTIVE
 local AVAILABLE=AVAILABLE
@@ -524,7 +540,6 @@ function module:GetTroopsFrame()
 		frame:SetPoint("BOTTOMLEFT",OrderHallMissionFrame,"TOPLEFT",0,-2)
 		frame:SetPoint("BOTTOMRIGHT",OrderHallMissionFrame,"TOPRIGHT",2,-2)
 		frame:SetFrameLevel(OrderHallMissionFrame:GetFrameLevel()-1)
-		frame:EnableMouse(true)
 		frame:SetMovable(true)
 		frame:RegisterForDrag("LeftButton")
 		frame:SetScript("OnDragStart",function(frame) if addon:GetBoolean('MOVEPANEL') then OHF:StartMoving() end end)
@@ -539,40 +554,68 @@ function module:ParseFollowers()
   G.RequestClassSpecCategoryInfo(followerType)
 	G.RequestLandingPageShipmentInfo();
 end	
+local function paintCat(frame)
+  if addon:GetBoolean(frame.key) then
+    frame.Count:SetTextColor(C.red())
+    frame.Icon:SetDesaturated(true)
+  else
+    frame.Count:SetTextColor(C.green())
+    frame.Icon:SetDesaturated(false)
+  end       
+end
 function module:GARRISON_FOLLOWER_CATEGORIES_UPDATED() 
   categoryInfo = G.GetClassSpecCategoryInfo(followerType)
 	if not OHF:IsVisible() then return end
 	local main=self:GetTroopsFrame()
-	local numCategories = #categoryInfo;
 	local prevCategory, firstCategory;
-	local nCategories=#categoryInfo
-	for i=1,#categoryInfo do
+	local nCategories=_G.XX or #categoryInfo
+	if nCategories < 1 then return end
+	local previous
+	local mask=nCategories <5 and CATEGORY_INFO_FORMAT or nCategories <7 and CATEGORY_INFO_FORMAT_SHORT or CATEGORY_INFO_FORMAT_VERY_SHORT
+	local W=main:GetWidth() - 60
+	local w=W/nCategories
+	for i=1,nCategories do
 		local category=categoryInfo[i]
 		local index=category.classSpec
-		if not catPool[index] then
-			catPool[index]=CreateFrame("Frame","FollowerIcon",main,"OrderHallClassSpecCategoryTemplate")
+    local frame = catPool[i];
+		if not frame then
+			frame=CreateFrame("Button","FollowerIcon",main,"OHCTroop")
+			catPool[i]=frame
+      frame:EnableMouse(true)
+      frame:RegisterForDrag("LeftButton")
+      frame:SetScript("OnDragStart",function(frame) if addon:GetBoolean('MOVEPANEL') then OHF:StartMoving() end end)
+      frame:SetScript("OnDragStop",function(frame) OHF:StopMovingOrSizing() end)
+      frame:SetScript("OnClick",function(frame) local value=not addon:GetBoolean(frame.key) addon:SetVar(frame.key,value) paintCat(frame) addon:Apply(frame.key,value) end)
+      frame.OnEnter=frame:GetScript("OnEnter")
+      frame:SetScript("OnEnter",function(frame)
+        frame:OnEnter()
+        if addon:GetBoolean(frame.key) then
+          GameTooltip:AddLine(KEY_BUTTON1 .. " " .. C(ENABLE,"green"))
+        else
+          GameTooltip:AddLine(KEY_BUTTON1 .. " " .. C(DISABLE,"red"))
+        end
+        GameTooltip:Show()
+      end)
 		end
-		local categoryInfoFrame = catPool[index];
 		if not shipmentInfo[category.icon] then
 			shipmentInfo[category.icon]={0,0}
 		end
-		categoryInfoFrame.Icon:SetTexture(category.icon);
-		categoryInfoFrame.Icon:SetTexCoord(0, 1, 0.25, 0.75)
-		categoryInfoFrame.TroopPortraitCover:Hide()
-		categoryInfoFrame.Icon:SetHeight(15)
-		categoryInfoFrame.Icon:SetWidth(35)
-		categoryInfoFrame.name = category.name;
-		categoryInfoFrame.description = category.description;
-		categoryInfoFrame.Count:SetFormattedText(
-			nCategories <5 and CATEGORY_INFO_FORMAT or CATEGORY_INFO_FORMAT_SHORT,
-			category.count, category.limit,unpack(shipmentInfo[category.icon]));
-		categoryInfoFrame.Count:SetWidth(categoryInfoFrame.Count:GetStringWidth()+10)
-		categoryInfoFrame:ClearAllPoints();
-		local padding= 600 / (nCategories * 1.5)
-		local w= padding + categoryInfoFrame.Count:GetWidth()
-		categoryInfoFrame:SetWidth(w)
-		categoryInfoFrame:SetPoint("TOPLEFT",50 +(w) *(i-1), 0);
-		categoryInfoFrame:Show();
+		frame.key="BAN"..index
+		frame.Icon:SetTexture(category.icon);
+		frame.Icon:SetTexCoord(0, 1, 0.25, 0.75)
+		frame.TroopPortraitCover:Hide()
+		frame.Icon:SetHeight(15)
+		frame.Icon:SetWidth(30)
+		frame.name = category.name;
+		frame.description = category.description;
+		frame.Count:SetFormattedText(mask,category.count, category.limit,unpack(shipmentInfo[category.icon]));
+		frame.Count:SetWidth(frame.Count:GetStringWidth()+30)
+		frame:ClearAllPoints();
+    local padding  = math.max(w,frame.Count:GetWidth())
+		frame:SetWidth(padding)
+		paintCat(frame)
+	  frame:SetPoint("TOPLEFT",45 +(w) *(i-1), 0);
+		frame:Show();
 	end
 end
 function addon:ParseFollowers()
@@ -719,8 +762,8 @@ function addon:SortTroop()
 		table.sort(tipo,f)
 	end
 end
-function addon:GetTroop(classSpec,slot,missionID,durability,ignoreBusy)
-	local troops=classTroops[classSpec]
+function addon:GetTroop(troopkey,slot,missionID,durability,ignoreBusy)
+	local troops=classTroops[troopkey]
 	slot=slot or 1
 	if not troops then return end -- No troops for this spec
 	if not ignoreBusy and not durability and not missionID then -- no more check requested
@@ -763,15 +806,23 @@ function addon:GetFullPermutations(dowipe)
 			local f=t[i]
 			if f.isCollected then
 				if f.isTroop then
-					if not classTroops[f.classSpec] then
-						classTroops[f.classSpec]={}
+				  local abilities=G.GetFollowerAbilities(f.followerID)
+          local abi=new()
+				  for i=1,#abilities do
+				    tinsert(abi,abilities[i].id)
+				  end
+				  table.sort(abi)
+				  local troopkey=strjoin('@',f.classSpec,unpack(abi))
+				  del(abi)
+					if not classTroops[troopkey] then
+						classTroops[troopkey]={}
 					end 
-					tinsert(classTroops[f.classSpec],f.followerID) 
-					if not seen[f.classSpec] then
-						tinsert(all,strjoin('|','T',f.classSpec,self:GetTroopCost(f.classSpec)))
-						seen[f.classSpec]=1
+					tinsert(classTroops[troopkey],f.followerID) 
+					if not seen[troopkey] then
+						tinsert(all,strjoin('|','T',troopkey,self:GetTroopCost(f.classSpec)))
+						seen[troopkey]=1
 					else
-						seen[f.classSpec]=seen[f.classSpec] +1
+						seen[troopkey]=seen[troopkey] +1
 					end
 				else
 					tinsert(all,strjoin('|','H',f.followerID,f.level+(f.level==MAX_LEVEL and f.quality or 0)))
@@ -792,7 +843,7 @@ function addon:GetFullPermutations(dowipe)
 				if all[j] then
 					local class,id,value=strsplit('|',all[j])
 					tinsert(fullPermutations,'2,'.. strjoin(',',all[i],all[j]))
-					if class=="T" and seen[tonumber(id)] > 1 then
+					if class=="T" and seen[id] > 1 then
 						-- I only see a classSpec once. Here if i know I have more than one troop for this spec, i force
 						-- a combination with both of them
 						tinsert(fullPermutations,'3,'.. strjoin(',',all[i],all[j],all[j] .. '|2'))

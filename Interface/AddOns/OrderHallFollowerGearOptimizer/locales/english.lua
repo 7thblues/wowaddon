@@ -9,6 +9,7 @@ L["Order Hall Follower Gear Optimizer"] = true
 L["Ignore Inactive Followers"] = true
 L["Ignore Combat Ally Followers"] = true
 L["Optimize"] = true
+L["Set items ignore applied enhancements"] = true
 L["Total Count: %d"] = true
 L["Upgrade follower only if they meet target item level"] = true
 L["Item Level"] = true

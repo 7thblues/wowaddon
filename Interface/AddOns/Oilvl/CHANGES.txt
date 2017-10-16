@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------
-r763 | olzenkhaw | 2017-10-04 21:07:53 -0500 (Wed, 04 Oct 2017) | 1 line
+r780 | olzenkhaw | 2017-10-13 21:19:30 -0500 (Fri, 13 Oct 2017) | 1 line
 Changed paths:
    M /trunk/Oilvl.lua
    M /trunk/Oilvl.toc
 
-v6.7.12 - Improved item level scanning.
+v6.7.20 - fixed item level in bags.
 ------------------------------------------------------------------------
 

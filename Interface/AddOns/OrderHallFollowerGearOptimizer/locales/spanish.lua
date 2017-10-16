@@ -20,6 +20,8 @@ if (isSpanish) then
 --Translation missing 
 -- L["Order Hall Follower Gear Optimizer"] = ""
 --Translation missing 
+-- L["Set items ignore applied enhancements"] = ""
+--Translation missing 
 -- L["Total Count: %d"] = ""
 --Translation missing 
 -- L["Upgrade follower only if they meet target item level"] = ""
@@ -43,6 +45,8 @@ else
 -- L["Optimize"] = ""
 --Translation missing 
 -- L["Order Hall Follower Gear Optimizer"] = ""
+--Translation missing 
+-- L["Set items ignore applied enhancements"] = ""
 --Translation missing 
 -- L["Total Count: %d"] = ""
 --Translation missing 

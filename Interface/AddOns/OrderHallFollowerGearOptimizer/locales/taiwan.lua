@@ -12,6 +12,7 @@ L["|cff00ff00Optimized Item Level:|r |cff00ffff%d|r"] = "|cff00ff00優化後的�
 L["Optimize"] = "優化"
 --Translation missing 
 -- L["Order Hall Follower Gear Optimizer"] = ""
+L["Set items ignore applied enhancements"] = "設置忽略應用於增強的物品"
 --Translation missing 
 -- L["Total Count: %d"] = ""
 L["Upgrade follower only if they meet target item level"] = "只有當追隨者達到目標物品等級才升級"

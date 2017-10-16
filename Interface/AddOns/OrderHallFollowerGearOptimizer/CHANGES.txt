@@ -1,8 +1,12 @@
 ------------------------------------------------------------------------
-r23 | ahak | 2017-08-30 06:33:01 -0500 (Wed, 30 Aug 2017) | 1 line
+r30 | ahak | 2017-10-07 16:03:12 -0500 (Sat, 07 Oct 2017) | 3 lines
 Changed paths:
-   M /trunk/OrderHallFollowerGearOptimizer.toc
+   M /trunk/core/core.lua
+   M /trunk/core/functions.lua
+   M /trunk/locales/english.lua
 
-- TOC bump for 7.3
+- Adding the new Armor Set -items
+-- New options
+- Fixing bugs that should have been fixed in 7.2 already
 ------------------------------------------------------------------------
 

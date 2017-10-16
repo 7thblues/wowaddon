@@ -417,7 +417,7 @@ local RepeatableQuests = {
 	[2010] = { reset = "wb", encounterId = true, max = 1, questIds = { 49169 } }, -- Matron Folnuna
 	[2011] = { reset = "wb", encounterId = true, max = 1, questIds = { 48167 } }, -- Mistress Alluradel
 	[2012] = { reset = "wb", encounterId = true, max = 1, questIds = { 49166 } }, -- Inquisitor Meto
-	[2013] = { reset = "wb", encounterId = true, max = 1, questIds = { 49165 } }, -- Occularus
+	[2013] = { reset = "wb", encounterId = true, max = 1, questIds = { 49170 } }, -- Occularus
 	[2014] = { reset = "wb", encounterId = true, max = 1, questIds = { 49171 } }, -- Sotanathor
 	[2015] = { reset = "wb", encounterId = true, max = 1, questIds = { 49168 } }, -- Pit Lord Vilemus
 	-- [2002] = { reset = "wb", encounterId = true, max = 1, questIds = {  } }, -- Keeper Aedis

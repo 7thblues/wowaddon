@@ -9,6 +9,7 @@ L["Item Level"] = "Gegenstandsstufe"
 L["Optimize"] = "Optimiere"
 --Translation missing 
 -- L["Order Hall Follower Gear Optimizer"] = ""
+L["Set items ignore applied enhancements"] = "Set-Gegenstände ignorieren bereits angewandte Verbesserungen"
 L["Total Count: %d"] = "Gesamtzahl: %d"
 L["Upgrade follower only if they meet target item level"] = "Anhänger nur verbessern, wenn sie die Ziel-Gegenstandsstufe erreichen"
 L["You have no follower upgrade items in your bags."] = "Du hast keine Verbesserungen für deine Anhänger in den Taschen."

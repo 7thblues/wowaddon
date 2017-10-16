@@ -12,6 +12,7 @@ if not L then return; end
 L["Optimize"] = "Optimiser"
 --Translation missing 
 -- L["Order Hall Follower Gear Optimizer"] = ""
+L["Set items ignore applied enhancements"] = "Les objets de Set ignorent les améliorations appliquées"
 --Translation missing 
 -- L["Total Count: %d"] = ""
 L["Upgrade follower only if they meet target item level"] = "N'améliorer les sujets que s'ils atteignent le niveau d'objet visé"
