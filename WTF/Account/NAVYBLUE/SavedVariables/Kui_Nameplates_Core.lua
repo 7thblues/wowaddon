@@ -40,11 +40,11 @@ KuiNameplatesCoreSaved = {
 			["font_size_normal"] = 16,
 			["font_size_small"] = 16,
 			["auras_icon_minus_size"] = 24,
-			["powerbar_height"] = 12,
+			["auras_hide_all_other"] = true,
 			["auras_icon_squareness"] = 0.800000011920929,
 			["auras_icon_normal_size"] = 32,
 			["tank_mode"] = false,
-			["auras_hide_all_other"] = true,
+			["powerbar_height"] = 12,
 			["castbar_colour"] = {
 				0.749019607843137, -- [1]
 				0.627450980392157, -- [2]

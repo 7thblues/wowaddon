@@ -1,49 +1,9 @@
 
 AiloDB = {
-	["profileKeys"] = {
-		["엔클라 - 듀로탄"] = "Default",
-		["모나헌 - 듀로탄"] = "Default",
-		["앨리셔 - 아즈샤라"] = "Default",
-		["나이오비 - 아즈샤라"] = "Default",
-		["벨니아스 - 아즈샤라"] = "Default",
-		["엑사 - 듀로탄"] = "Default",
-		["엑사 - 아즈샤라"] = "Default",
-		["이나바 - 아즈샤라"] = "Default",
-	},
 	["global"] = {
 		["lockouts"] = {
 			["아즈샤라.엑사.카라잔.LegacyRaid"] = {
 				["max"] = 11,
-				["count"] = 1,
-				["reset"] = 1508367599,
-			},
-			["아즈샤라.엑사.살게라스의 무덤.기만자의 몰락"] = {
-				["max"] = 1,
-				["count"] = 1,
-				["reset"] = 1508367599,
-			},
-			["아즈샤라.나이오비.카라잔.LegacyRaid"] = {
-				["max"] = 11,
-				["count"] = 3,
-				["reset"] = 1508367599,
-			},
-			["아즈샤라.엑사.살게라스의 무덤.HeroicRaid"] = {
-				["max"] = 9,
-				["count"] = 7,
-				["reset"] = 1508367599,
-			},
-			["아즈샤라.나이오비.얼음왕관 성채.LegacyRaid"] = {
-				["max"] = 12,
-				["count"] = 11,
-				["reset"] = 1508367599,
-			},
-			["아즈샤라.엑사.살게라스의 무덤.지옥의 관문"] = {
-				["max"] = 3,
-				["count"] = 3,
-				["reset"] = 1508367599,
-			},
-			["아즈샤라.나이오비.에메랄드의 악몽.알른의 균열"] = {
-				["max"] = 1,
 				["count"] = 1,
 				["reset"] = 1508367599,
 			},
@@ -52,45 +12,75 @@ AiloDB = {
 				["count"] = 1,
 				["reset"] = 1508367600,
 			},
+			["아즈샤라.나이오비.에메랄드의 악몽.알른의 균열"] = {
+				["max"] = 1,
+				["count"] = 1,
+				["reset"] = 1508367599,
+			},
+			["아즈샤라.엑사.살게라스의 무덤.HeroicRaid"] = {
+				["max"] = 9,
+				["count"] = 7,
+				["reset"] = 1508367599,
+			},
+			["아즈샤라.엑사.살게라스의 무덤.지옥의 관문"] = {
+				["max"] = 3,
+				["count"] = 3,
+				["reset"] = 1508367599,
+			},
+			["아즈샤라.나이오비.카라잔.LegacyRaid"] = {
+				["max"] = 11,
+				["count"] = 3,
+				["reset"] = 1508367599,
+			},
+			["아즈샤라.나이오비.얼음왕관 성채.LegacyRaid"] = {
+				["max"] = 12,
+				["count"] = 11,
+				["reset"] = 1508367599,
+			},
+			["아즈샤라.엑사.살게라스의 무덤.기만자의 몰락"] = {
+				["max"] = 1,
+				["count"] = 1,
+				["reset"] = 1508367599,
+			},
 		},
 		["nextWeeklyReset"] = 1508367599,
 		["nextDailyReset"] = 1508194799,
-		["nextPurge"] = 1508194799,
+		["nextDailyResetDate"] = "10/17/17 07:59:59",
 		["roster"] = {
 			["듀로탄.모나헌"] = {
-				["class"] = "WARRIOR",
 				["level"] = 91,
+				["class"] = "WARRIOR",
 			},
 			["듀로탄.엔클라"] = {
-				["level"] = 90,
 				["class"] = "PALADIN",
+				["level"] = 90,
 			},
 			["듀로탄.엑사"] = {
-				["level"] = 90,
 				["class"] = "DEATHKNIGHT",
+				["level"] = 90,
 			},
 			["아즈샤라.나이오비"] = {
-				["level"] = 110,
 				["class"] = "DEATHKNIGHT",
+				["level"] = 110,
 			},
 			["아즈샤라.엑사"] = {
 				["level"] = 110,
 				["class"] = "WARRIOR",
 			},
 			["아즈샤라.앨리셔"] = {
-				["class"] = "PALADIN",
 				["level"] = 110,
-			},
-			["아즈샤라.벨니아스"] = {
-				["level"] = 100,
-				["class"] = "DEMONHUNTER",
+				["class"] = "PALADIN",
 			},
 			["아즈샤라.이나바"] = {
+				["level"] = 100,
 				["class"] = "SHAMAN",
+			},
+			["아즈샤라.벨니아스"] = {
+				["class"] = "DEMONHUNTER",
 				["level"] = 100,
 			},
 		},
-		["version"] = 18,
+		["nextPurge"] = 1508194799,
 		["currencies"] = {
 			["total"] = {
 				["아즈샤라.앨리셔.LootCoins"] = {
@@ -107,7 +97,6 @@ AiloDB = {
 				},
 			},
 		},
-		["nextWeeklyResetDate"] = "10/19/17 07:59:59",
 		["dailies"] = {
 			["아즈샤라.앨리셔.DailyHeroicScenario"] = {
 				["count"] = 1,
@@ -142,6 +131,7 @@ AiloDB = {
 				["max"] = 1,
 			},
 		},
+		["nextWeeklyResetDate"] = "10/19/17 07:59:59",
 		["bounties"] = {
 			["아즈샤라.엑사.1394953"] = {
 				["done"] = true,
@@ -150,7 +140,17 @@ AiloDB = {
 				["done"] = true,
 			},
 		},
-		["nextDailyResetDate"] = "10/17/17 07:59:59",
+		["version"] = 18,
+	},
+	["profileKeys"] = {
+		["앨리셔 - 아즈샤라"] = "Default",
+		["모나헌 - 듀로탄"] = "Default",
+		["엔클라 - 듀로탄"] = "Default",
+		["나이오비 - 아즈샤라"] = "Default",
+		["엑사 - 아즈샤라"] = "Default",
+		["엑사 - 듀로탄"] = "Default",
+		["벨니아스 - 아즈샤라"] = "Default",
+		["이나바 - 아즈샤라"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -158,7 +158,7 @@ AiloDB = {
 				["minimapPos"] = 129.017329684495,
 			},
 			["showAllChars"] = true,
-			["showLeft"] = true,
+			["showDalaran"] = false,
 			["version"] = 18,
 			["instanceAbbr"] = {
 				["카라잔"] = "카라잔",
@@ -182,7 +182,7 @@ AiloDB = {
 				["Bounties"] = "B",
 				["기만자의 몰락"] = "기만자의 몰락",
 			},
-			["showDalaran"] = false,
+			["showLeft"] = true,
 			["difficultyAbbr"] = {
 				["일반"] = "일반",
 				["시간여행"] = "시간여행",

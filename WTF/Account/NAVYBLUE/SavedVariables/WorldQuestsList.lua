@@ -1,77 +1,112 @@
 
 VWQL = {
 	["베레디알-하이잘"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Scale"] = 0.9,
 	["모나헌-듀로탄"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["VERSION"] = 19,
 	["벨니아스-아즈샤라"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
 	["Wtgoing-ValleyofHeroes"] = {
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 		["Quests"] = {
 		},
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 	},
 	["로보토미-아즈샤라"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["RegularQuestMode"] = true,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
-	},
-	["마르갈리트-아즈샤라"] = {
 		["FilterType"] = {
 		},
+	},
+	["마르갈리트-아즈샤라"] = {
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
 	["ReverseSort"] = true,
 	["Reca-아즈샤라"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Ignore"] = {
 	},
 	["이나바-아즈샤라"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["엑사-세나리우스"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["로메크-아즈샤라"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["나이오비-아즈샤라"] = {
 		["Filter"] = 63,
 		["Quests"] = {
+			[42859] = true,
+			[48502] = true,
+			[44938] = true,
+			[48318] = true,
+			[45068] = true,
+			[43767] = true,
+			[42745] = true,
+			[48729] = true,
+			[40298] = true,
+			[49046] = true,
+			[44769] = true,
+			[48615] = true,
+			[48957] = true,
+			[48091] = true,
+			[47705] = true,
+			[44780] = true,
+			[43193] = true,
+			[41864] = true,
+			[43445] = true,
+			[43943] = true,
+			[48099] = true,
 		},
 		["FilterType"] = {
 		},
 	},
-	["Sort"] = 5,
 	["앨리셔-아즈샤라"] = {
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 		["Quests"] = {
 			[46186] = true,
 			[46194] = true,
@@ -117,71 +152,37 @@ VWQL = {
 			[48729] = true,
 			[46193] = true,
 			[45070] = true,
-			[44784] = true,
+			[42830] = true,
 			[42796] = true,
 			[43943] = true,
 			[44817] = true,
 			[42173] = true,
 			[42177] = true,
-			[43458] = true,
+			[43445] = true,
 			[40280] = true,
 			[41488] = true,
 			[43193] = true,
 			[44737] = true,
 			[46707] = true,
-			[44118] = true,
-			[43098] = true,
-			[41451] = true,
-			[42146] = true,
-			[41926] = true,
 			[40298] = true,
+			[43098] = true,
+			[44118] = true,
+			[41926] = true,
+			[42146] = true,
+			[41451] = true,
 			[44769] = true,
 			[44011] = true,
 			[42745] = true,
-			[43445] = true,
+			[43458] = true,
 			[41864] = true,
-			[42830] = true,
-		},
-		["FilterType"] = {
-		},
-	},
-	["나이오비-아즈샤라"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-			[42859] = true,
-			[48502] = true,
-			[44938] = true,
-			[48318] = true,
-			[45068] = true,
-			[43767] = true,
-			[42745] = true,
-			[48729] = true,
-			[40298] = true,
-			[49046] = true,
-			[44769] = true,
-			[48615] = true,
-			[48957] = true,
-			[48091] = true,
-			[48099] = true,
-			[43943] = true,
-			[41864] = true,
-			[43445] = true,
-			[43193] = true,
-			[44780] = true,
-			[47705] = true,
+			[44784] = true,
 		},
 		["Filter"] = 63,
 	},
-	["로메크-아즈샤라"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
+	["Sort"] = 5,
 	["엑사-아즈샤라"] = {
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 		["Quests"] = {
 			[46063] = true,
 			[42019] = true,
@@ -194,6 +195,7 @@ VWQL = {
 			[42075] = true,
 			[45520] = true,
 			[44893] = true,
+			[48834] = true,
 			[41095] = true,
 			[48723] = true,
 			[46068] = true,
@@ -201,7 +203,6 @@ VWQL = {
 			[48509] = true,
 			[47624] = true,
 			[46866] = true,
-			[45473] = true,
 			[46001] = true,
 			[42830] = true,
 			[41691] = true,
@@ -224,34 +225,33 @@ VWQL = {
 			[44784] = true,
 			[48094] = true,
 			[44923] = true,
+			[48526] = true,
 			[42145] = true,
-			[46752] = true,
-			[42027] = true,
-			[44031] = true,
+			[44811] = true,
+			[41533] = true,
+			[44033] = true,
 			[43943] = true,
-			[42190] = true,
-			[41926] = true,
+			[42018] = true,
 			[43193] = true,
 			[43451] = true,
-			[43333] = true,
+			[42176] = true,
 			[41886] = true,
+			[41948] = true,
+			[44815] = true,
+			[41451] = true,
+			[41828] = true,
 			[42209] = true,
-			[41949] = true,
 			[44118] = true,
 			[43098] = true,
-			[41828] = true,
-			[41451] = true,
-			[44815] = true,
-			[41948] = true,
+			[41949] = true,
 			[44892] = true,
-			[42176] = true,
+			[43333] = true,
 			[44011] = true,
-			[42018] = true,
-			[44033] = true,
-			[41533] = true,
-			[44811] = true,
+			[42190] = true,
+			[44031] = true,
+			[42027] = true,
+			[46752] = true,
 		},
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 	},
 }

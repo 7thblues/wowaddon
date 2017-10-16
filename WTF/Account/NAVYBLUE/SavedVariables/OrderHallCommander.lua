@@ -1,15 +1,20 @@
 
 dbOHC = {
 	["char"] = {
-		["앨리셔 - 아즈샤라"] = {
+		["엑사 - 아즈샤라"] = {
 			["firstun"] = false,
 		},
-		["엑사 - 아즈샤라"] = {
+		["앨리셔 - 아즈샤라"] = {
 			["firstun"] = false,
 		},
 		["나이오비 - 아즈샤라"] = {
 			["firstun"] = false,
 		},
+	},
+	["profileKeys"] = {
+		["엑사 - 아즈샤라"] = "Default",
+		["앨리셔 - 아즈샤라"] = "Default",
+		["나이오비 - 아즈샤라"] = "Default",
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
@@ -17,11 +22,6 @@ dbOHC = {
 		["news"] = {
 		},
 		["warn02_seen"] = 0,
-	},
-	["profileKeys"] = {
-		["앨리셔 - 아즈샤라"] = "Default",
-		["엑사 - 아즈샤라"] = "Default",
-		["나이오비 - 아즈샤라"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -42,18 +42,18 @@ dbOHC = {
 				["PREFERHIGH"] = false,
 				["TROOPALERT"] = true,
 				["MAKEITQUICK"] = false,
-				["SPARE"] = false,
 				["MAKEITVERYQUICK"] = false,
+				["SPARE"] = false,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
-			["showmenu"] = true,
 			["blacklist"] = {
 				[1719] = true,
 				[1276] = true,
-				[1731] = true,
 				[1774] = false,
+				[1731] = true,
 			},
+			["showmenu"] = true,
 		},
 	},
 }

@@ -5,20 +5,20 @@ SkadaDB = {
 		},
 	},
 	["profileKeys"] = {
+		["베레디알 - 하이잘"] = "Default",
 		["로보토미 - 아즈샤라"] = "Default",
-		["나이오비 - 아즈샤라"] = "Default",
-		["엑사 - 아즈샤라"] = "Default",
+		["벨니아스 - 아즈샤라"] = "Default",
 		["Reca - 아즈샤라"] = "Default",
 		["마르갈리트 - 아즈샤라"] = "Default",
 		["이나바 - 아즈샤라"] = "Default",
-		["엑사 - 세나리우스"] = "Default",
+		["직첵직첵 - 아즈샤라"] = "Default",
 		["모나헌 - 듀로탄"] = "Default",
 		["앨리셔 - 아즈샤라"] = "Default",
+		["엑사 - 세나리우스"] = "Default",
 		["Wtgoing - Valley of Heroes"] = "Default",
-		["직첵직첵 - 아즈샤라"] = "Default",
 		["로메크 - 아즈샤라"] = "Default",
-		["벨니아스 - 아즈샤라"] = "Default",
-		["베레디알 - 하이잘"] = "Default",
+		["엑사 - 아즈샤라"] = "Default",
+		["나이오비 - 아즈샤라"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -38,13 +38,13 @@ SkadaDB = {
 					["title"] = {
 						["fontsize"] = 11,
 					},
-					["background"] = {
-						["height"] = 233.419021606445,
-					},
 					["point"] = "LEFT",
 					["barfontsize"] = 11,
 					["mode"] = "데미지",
 					["barwidth"] = 220.95491027832,
+					["background"] = {
+						["height"] = 233.419021606445,
+					},
 					["x"] = 0,
 				}, -- [1]
 			},
@@ -55,9 +55,9 @@ SkadaDB = {
 				["channel"] = "guild",
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["setstokeep"] = 99,
 			["onlykeepbosses"] = true,

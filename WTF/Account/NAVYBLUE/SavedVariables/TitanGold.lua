@@ -10,35 +10,35 @@ GoldSave = {
 		["name"] = "엔클라",
 		["gold"] = 53356313,
 	},
-	["이나바_아즈샤라::Horde"] = {
-		["show"] = true,
-		["name"] = "이나바",
-		["gold"] = 234783500,
-	},
 	["나이오비_아즈샤라::Horde"] = {
 		["show"] = true,
 		["name"] = "나이오비",
 		["gold"] = 824088350,
+	},
+	["앨리셔_아즈샤라::Horde"] = {
+		["show"] = true,
+		["name"] = "앨리셔",
+		["gold"] = 574028264,
 	},
 	["로보토미_아즈샤라::Horde"] = {
 		["show"] = true,
 		["name"] = "로보토미",
 		["gold"] = 51693688,
 	},
-	["모나헌_듀로탄::Alliance"] = {
+	["Reca_아즈샤라::Horde"] = {
 		["show"] = true,
-		["name"] = "모나헌",
-		["gold"] = 22175741,
+		["name"] = "Reca",
+		["gold"] = 38033,
 	},
 	["Wtgoing_Valley of Heroes::Horde"] = {
 		["show"] = true,
 		["name"] = "Wtgoing",
 		["gold"] = 1000000000,
 	},
-	["Reca_아즈샤라::Horde"] = {
+	["모나헌_듀로탄::Alliance"] = {
 		["show"] = true,
-		["name"] = "Reca",
-		["gold"] = 38033,
+		["name"] = "모나헌",
+		["gold"] = 22175741,
 	},
 	["엑사_듀로탄::Alliance"] = {
 		["show"] = true,
@@ -53,17 +53,17 @@ GoldSave = {
 	["엑사_아즈샤라::Horde"] = {
 		["show"] = true,
 		["name"] = "엑사",
-		["gold"] = 202919051,
+		["gold"] = 203723044,
 	},
 	["벨니아스_아즈샤라::Horde"] = {
 		["show"] = true,
 		["name"] = "벨니아스",
 		["gold"] = 41071868,
 	},
-	["앨리셔_아즈샤라::Horde"] = {
+	["이나바_아즈샤라::Horde"] = {
 		["show"] = true,
-		["name"] = "앨리셔",
-		["gold"] = 574028264,
+		["name"] = "이나바",
+		["gold"] = 234783500,
 	},
 	["엑사_세나리우스::Alliance"] = {
 		["show"] = true,
