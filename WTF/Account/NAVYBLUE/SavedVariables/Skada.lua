@@ -5,8 +5,8 @@ SkadaDB = {
 		},
 	},
 	["profileKeys"] = {
-		["베레디알 - 하이잘"] = "Default",
 		["로보토미 - 아즈샤라"] = "Default",
+		["나이오비 - 아즈샤라"] = "Default",
 		["벨니아스 - 아즈샤라"] = "Default",
 		["Reca - 아즈샤라"] = "Default",
 		["마르갈리트 - 아즈샤라"] = "Default",
@@ -18,7 +18,7 @@ SkadaDB = {
 		["Wtgoing - Valley of Heroes"] = "Default",
 		["로메크 - 아즈샤라"] = "Default",
 		["엑사 - 아즈샤라"] = "Default",
-		["나이오비 - 아즈샤라"] = "Default",
+		["베레디알 - 하이잘"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -34,7 +34,7 @@ SkadaDB = {
 			},
 			["windows"] = {
 				{
-					["y"] = -74.4016723632813,
+					["y"] = -70.8461456298828,
 					["title"] = {
 						["fontsize"] = 11,
 					},
@@ -45,7 +45,7 @@ SkadaDB = {
 					["background"] = {
 						["height"] = 233.419021606445,
 					},
-					["x"] = 0,
+					["x"] = 181.333435058594,
 				}, -- [1]
 			},
 			["feed"] = "피해량: 자신의 DPS",

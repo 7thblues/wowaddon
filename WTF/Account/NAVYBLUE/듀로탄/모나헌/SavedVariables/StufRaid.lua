@@ -1,34 +1,14 @@
 
 StufRaidCharLayoutDB = nil
 StufRaidCharDB = {
-	["balert"] = {
-		["소멸"] = true,
-		["구사일생"] = true,
-		["고통 억제"] = true,
-		["얼음 방패"] = true,
-		["광폭화"] = true,
-		["아군 되살리기"] = true,
-		["회피"] = true,
-		["눈속임"] = true,
-		["어둠의 시야"] = true,
-		["신의 가호"] = true,
-		["수호 영혼"] = true,
-		["소실"] = true,
-		["보호의 축복"] = true,
-		["황천의 폭풍 깃발"] = true,
-		["그림자 망토"] = true,
-		["얼라이언스 깃발"] = true,
-		["희생의 축복"] = true,
-		["호드 깃발"] = true,
-		["구원의 영혼"] = true,
-		["정신 자극"] = true,
-		["죽은 척하기"] = true,
-		["투명화"] = true,
-		["방패의 벽"] = true,
-		["천상의 보호막"] = true,
-		["최후의 저항"] = true,
+	["bexclude"] = {
 	},
 	["bshow"] = "raid",
+	["dexclude"] = {
+		["돌연변이 유발"] = true,
+	},
+	["dinclude"] = {
+	},
 	["dalert"] = {
 		["비전 숨결"] = true,
 		["집중 공격"] = true,
@@ -43,14 +23,34 @@ StufRaidCharDB = {
 		["얼음 화살"] = true,
 		["회오리바람"] = true,
 	},
-	["dinclude"] = {
-	},
-	["dexclude"] = {
-		["돌연변이 유발"] = true,
-	},
 	["binclude"] = {
 	},
-	["bexclude"] = {
+	["balert"] = {
+		["소멸"] = true,
+		["구사일생"] = true,
+		["고통 억제"] = true,
+		["얼음 방패"] = true,
+		["광폭화"] = true,
+		["아군 되살리기"] = true,
+		["회피"] = true,
+		["눈속임"] = true,
+		["어둠의 시야"] = true,
+		["신의 가호"] = true,
+		["수호 영혼"] = true,
+		["소실"] = true,
+		["보호의 축복"] = true,
+		["그림자 망토"] = true,
+		["호드 깃발"] = true,
+		["얼라이언스 깃발"] = true,
+		["희생의 축복"] = true,
+		["구원의 영혼"] = true,
+		["정신 자극"] = true,
+		["죽은 척하기"] = true,
+		["천상의 보호막"] = true,
+		["황천의 폭풍 깃발"] = true,
+		["투명화"] = true,
+		["방패의 벽"] = true,
+		["최후의 저항"] = true,
 	},
 	["dshow"] = "raid",
 }

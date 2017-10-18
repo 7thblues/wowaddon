@@ -1,6 +1,6 @@
 Bartender4: disabled
-NugComboBar: disabled
-NugEnergy: disabled
+NugComboBar: enabled
+NugEnergy: enabled
 ClassTimer: disabled
 ShadowedUnitFrames: disabled
 TitanReputation: enabled
@@ -69,7 +69,7 @@ WorldQuestsList: enabled
 HandyNotes: enabled
 gatherer_hud: enabled
 Auctionator: enabled
-UmberRunes: enabled
+UmberRunes: disabled
 HideBlizzard: disabled
 OrderHallFollowerGearOptimizer: disabled
 Simulationcraft: enabled

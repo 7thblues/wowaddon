@@ -1,38 +1,67 @@
 
 NugComboBarDB_Global = {
-	["meatcleaver"] = false,
+	["classThemes"] = true,
 	["disableBlizzNP"] = true,
 	["infernoBlast"] = false,
 	["showEmpty"] = true,
-	["y"] = -135.262145996094,
-	["x"] = 6.08868980407715,
+	["y"] = -125.484405517578,
 	["soundNameFull"] = "alarmclockwarning3",
 	["charspec"] = {
 	},
 	["shadowDance"] = false,
-	["classThemes"] = true,
+	["meatcleaver"] = false,
 	["disableBlizz"] = true,
 	["showAlways"] = true,
 	["colors"] = {
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [1]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [2]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [3]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [4]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [5]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [6]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [7]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [8]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [9]
 		{
+			0.77, -- [1]
+			0.26, -- [2]
+			0.29, -- [3]
 		}, -- [10]
 		["row2"] = {
 		},
@@ -44,6 +73,6 @@ NugComboBarDB_Global = {
 		},
 	},
 	["tidalWaves"] = false,
-	["preset3d"] = "glowPurple",
 	["anchorpoint"] = "TOP",
+	["x"] = 6.08868980407715,
 }

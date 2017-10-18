@@ -5,12 +5,13 @@ NugComboBarDB_Global = {
 	["infernoBlast"] = false,
 	["showEmpty"] = true,
 	["y"] = -125.484405517578,
-	["preset3d"] = "glowPurple",
+	["x"] = 6.08868980407715,
 	["soundNameFull"] = "alarmclockwarning3",
 	["charspec"] = {
 	},
 	["shadowDance"] = false,
 	["classThemes"] = true,
+	["preset3d"] = "glowPurple",
 	["disableBlizz"] = true,
 	["showAlways"] = true,
 	["colors"] = {
@@ -45,5 +46,4 @@ NugComboBarDB_Global = {
 	},
 	["tidalWaves"] = false,
 	["anchorpoint"] = "TOP",
-	["x"] = 6.08868980407715,
 }

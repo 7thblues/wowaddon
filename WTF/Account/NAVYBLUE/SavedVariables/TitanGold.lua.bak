@@ -53,7 +53,7 @@ GoldSave = {
 	["엑사_아즈샤라::Horde"] = {
 		["show"] = true,
 		["name"] = "엑사",
-		["gold"] = 202919051,
+		["gold"] = 205011022,
 	},
 	["벨니아스_아즈샤라::Horde"] = {
 		["show"] = true,
@@ -63,7 +63,7 @@ GoldSave = {
 	["나이오비_아즈샤라::Horde"] = {
 		["show"] = true,
 		["name"] = "나이오비",
-		["gold"] = 824088350,
+		["gold"] = 858682949,
 	},
 	["엑사_세나리우스::Alliance"] = {
 		["show"] = true,
